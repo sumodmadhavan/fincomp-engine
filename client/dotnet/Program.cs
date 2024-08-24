@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Diagnostics;  // For Stopwatch
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;  // For JsonPropertyName
 using System.Threading.Tasks;
-using System.Text.Json.Serialization;
+
 public class GoalSeekRequest
 {
     public int NumYears { get; set; }
@@ -18,7 +20,6 @@ public class GoalSeekRequest
     public int TargetProfit { get; set; }
     public double InitialRate { get; set; }
 }
-
 
 public class GoalSeekResponse
 {
@@ -41,7 +42,7 @@ public class Program
     {
         var request = new GoalSeekRequest
         {
-            NumYears = 10,
+            NumYears = 35,
             AuHours = 450,
             InitialTSN = 100,
             RateEscalation = 5,
@@ -56,47 +57,40 @@ public class Program
 
         try
         {
+            var stopwatch = Stopwatch.StartNew(); // Start the stopwatch
             var result = await CallGoalSeekApiAsync(request);
-            Console.WriteLine($"Optimal Warranty Rate: {result.OptimalWarrantyRate}");
-            Console.WriteLine($"Iterations: {result.Iterations}");
-            Console.WriteLine($"Final Cumulative Profit: {result.FinalCumulativeProfit}");
+            stopwatch.Stop(); // Stop the stopwatch
+
+            Console.WriteLine($"Response Time: {stopwatch.ElapsedMilliseconds} ms");
+
+            if (result != null)
+            {
+                Console.WriteLine($"Optimal Warranty Rate: {result.OptimalWarrantyRate}");
+                Console.WriteLine($"Iterations: {result.Iterations}");
+                Console.WriteLine($"Final Cumulative Profit: {result.FinalCumulativeProfit}");
+            }
+            else
+            {
+                Console.WriteLine("API response was null or deserialization failed.");
+            }
         }
         catch (HttpRequestException e)
         {
             Console.WriteLine($"Error calling API: {e.Message}");
         }
-        catch (Exception e)
-        {
-            Console.WriteLine($"An unexpected error occurred: {e.Message}");
-        }
     }
 
-
     private static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)
-{
-    // Serialize the request object to JSON format
-    var json = JsonSerializer.Serialize(request);
+    {
+        var json = JsonSerializer.Serialize(request);
+        var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-    // Create the HTTP content using the JSON string
-    var content = new StringContent(json, Encoding.UTF8, "application/json");
+        var response = await client.PostAsync(ApiUrl, content);
+        response.EnsureSuccessStatusCode();
 
-    // Send the POST request to the API
-    var response = await client.PostAsync(ApiUrl, content);
+        var responseBody = await response.Content.ReadAsStringAsync();
+        Console.WriteLine("Response from API: " + responseBody);
 
-    // Ensure that the request was successful
-    response.EnsureSuccessStatusCode();
-
-    // Read the response body as a string
-    var responseBody = await response.Content.ReadAsStringAsync();
-
-    // Log the raw JSON response from the API
-    Console.WriteLine("Response from API: " + responseBody);
-
-    // Deserialize the JSON response into the GoalSeekResponse object
-    var result = JsonSerializer.Deserialize<GoalSeekResponse>(responseBody);
-
-    // Return the deserialized object or null if deserialization failed
-    return result;
-}
-
+        return JsonSerializer.Deserialize<GoalSeekResponse>(responseBody);
+    }
 }
