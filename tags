@@ -17,10 +17,11 @@ BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func Bench
 Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 Calculate	internal/runout/runout.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
-CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    private static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program	file:
+CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    public static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program
 FinalCumulativeProfit	client/dotnet/Program.cs	/^    public double FinalCumulativeProfit { get; set; }$/;"	p	class:GoalSeekResponse
 FinancialParams	internal/financials/params.go	/^type FinancialParams struct {$/;"	t
 GoalSeek	internal/financials/calculations.go	/^func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {$/;"	f
+GoalSeekApiTests	client/dotnet/GoalSeekApiTests.cs	/^public class GoalSeekApiTests$/;"	c
 GoalSeekHandler	internal/api/handlers.go	/^func (s *Server) GoalSeekHandler(c *gin.Context) {$/;"	f
 GoalSeekRequest	client/dotnet/Program.cs	/^public class GoalSeekRequest$/;"	c
 GoalSeekResponse	client/dotnet/Program.cs	/^public class GoalSeekResponse$/;"	c
@@ -46,6 +47,7 @@ TestCalculate	internal/goalseek/goalseek_test.go	/^func TestCalculate(t *testing
 TestCalculate	internal/runout/runout_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
 TestCalculateFinancials	internal/financials/calculations_test.go	/^func TestCalculateFinancials(t *testing.T) {$/;"	f
 TestGoalSeek	internal/financials/calculations_test.go	/^func TestGoalSeek(t *testing.T) {$/;"	f
+TestGoalSeekApi_WithDifferentYears	client/dotnet/GoalSeekApiTests.cs	/^    public async Task TestGoalSeekApi_WithDifferentYears(int numYears, double expectedProfit, int expectedIterations, double expectedWarrantyRate)$/;"	m	class:GoalSeekApiTests
 TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
 Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
 api	internal/api/handlers.go	/^package api$/;"	p
