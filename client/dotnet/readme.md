@@ -29,6 +29,7 @@ cd fincomp-engine
 cd client/dotnet
 dotnet restore
 dotnet run
+```
 
 ### Go API Setup
 Ensure that the Go computation engine is running on http://localhost:8080. Follow the instructions in the Go project's README.md for setup and execution.
