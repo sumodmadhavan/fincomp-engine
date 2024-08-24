@@ -26,5 +26,16 @@ This project is a .NET client that interacts with a Go-based computation engine 
 ```bash
 git clone https://github.com/sumodmadhavan/fincomp-engine.git
 cd fincomp-engine
+cd client/dotnet
+dotnet restore
+dotnet run
 
+### Go API Setup
+Ensure that the Go computation engine is running on http://localhost:8080. Follow the instructions in the Go project's README.md for setup and execution.
+
+### Usage
+Once both the Go computation engine and the .NET client are running, you can interact with the API by sending various scenarios for processing. The client will display the optimal warranty rate, number of iterations, and final cumulative profit.
+
+### Result
+![image](https://github.com/user-attachments/assets/e166b1ff-603f-4c34-9f5b-cc60c7753059)
 
