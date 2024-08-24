@@ -4,9 +4,12 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Aic	client/dotnet/Program.cs	/^    public int Aic { get; set; }$/;"	p	class:GoalSeekRequest
+ApiUrl	client/dotnet/Program.cs	/^    private const string ApiUrl = "http:\/\/localhost:8080\/goalseek";$/;"	f	class:Program	file:
 AssertEqual	pkg/testutils/testutils.go	/^func AssertEqual(t *testing.T, expected, actual interface{}) {$/;"	f
 AssertError	pkg/testutils/testutils.go	/^func AssertError(t *testing.T, err error) {$/;"	f
 AssertNoError	pkg/testutils/testutils.go	/^func AssertNoError(t *testing.T, err error) {$/;"	f
+AuHours	client/dotnet/Program.cs	/^    public int AuHours { get; set; }$/;"	p	class:GoalSeekRequest
 BenchmarkCalculate	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculate(b *testing.B) {$/;"	f
 BenchmarkCalculate	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculate(b *testing.B) {$/;"	f
 BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
@@ -14,14 +17,31 @@ BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func Bench
 Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 Calculate	internal/runout/runout.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
+CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    private static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program	file:
+FinalCumulativeProfit	client/dotnet/Program.cs	/^    public double FinalCumulativeProfit { get; set; }$/;"	p	class:GoalSeekResponse
 FinancialParams	internal/financials/params.go	/^type FinancialParams struct {$/;"	t
 GoalSeek	internal/financials/calculations.go	/^func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {$/;"	f
 GoalSeekHandler	internal/api/handlers.go	/^func (s *Server) GoalSeekHandler(c *gin.Context) {$/;"	f
+GoalSeekRequest	client/dotnet/Program.cs	/^public class GoalSeekRequest$/;"	c
+GoalSeekResponse	client/dotnet/Program.cs	/^public class GoalSeekResponse$/;"	c
+HsiCost	client/dotnet/Program.cs	/^    public int HsiCost { get; set; }$/;"	p	class:GoalSeekRequest
+HsiTsn	client/dotnet/Program.cs	/^    public int HsiTsn { get; set; }$/;"	p	class:GoalSeekRequest
+InitialRate	client/dotnet/Program.cs	/^    public double InitialRate { get; set; }$/;"	p	class:GoalSeekRequest
+InitialTSN	client/dotnet/Program.cs	/^    public int InitialTSN { get; set; }$/;"	p	class:GoalSeekRequest
+Iterations	client/dotnet/Program.cs	/^    public int Iterations { get; set; }$/;"	p	class:GoalSeekResponse
+Main	client/dotnet/Program.cs	/^    public static async Task Main()$/;"	m	class:Program
 NewServer	internal/api/server.go	/^func NewServer() *Server {$/;"	f
 NewtonRaphson	internal/financials/calculations.go	/^func NewtonRaphson(f, df func(float64) (float64, error), x0, xtol float64, maxIter int) (float64, int, error) {$/;"	f
+NumYears	client/dotnet/Program.cs	/^    public int NumYears { get; set; }$/;"	p	class:GoalSeekRequest
+OptimalWarrantyRate	client/dotnet/Program.cs	/^    public double OptimalWarrantyRate { get; set; }$/;"	p	class:GoalSeekResponse
+OverhaulCost	client/dotnet/Program.cs	/^    public int OverhaulCost { get; set; }$/;"	p	class:GoalSeekRequest
+OverhaulTSN	client/dotnet/Program.cs	/^    public int OverhaulTSN { get; set; }$/;"	p	class:GoalSeekRequest
+Program	client/dotnet/Program.cs	/^public class Program$/;"	c
+RateEscalation	client/dotnet/Program.cs	/^    public double RateEscalation { get; set; }$/;"	p	class:GoalSeekRequest
 Run	internal/api/server.go	/^func (s *Server) Run(addr string) error {$/;"	f
 RunoutHandler	internal/api/handlers.go	/^func (s *Server) RunoutHandler(c *gin.Context) {$/;"	f
 Server	internal/api/server.go	/^type Server struct {$/;"	t
+TargetProfit	client/dotnet/Program.cs	/^    public int TargetProfit { get; set; }$/;"	p	class:GoalSeekRequest
 TestCalculate	internal/goalseek/goalseek_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
 TestCalculate	internal/runout/runout_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
 TestCalculateFinancials	internal/financials/calculations_test.go	/^func TestCalculateFinancials(t *testing.T) {$/;"	f
@@ -31,6 +51,7 @@ Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() err
 api	internal/api/handlers.go	/^package api$/;"	p
 api	internal/api/handlers_test.go	/^package api$/;"	p
 api	internal/api/server.go	/^package api$/;"	p
+client	client/dotnet/Program.cs	/^    private static readonly HttpClient client = new HttpClient();$/;"	f	class:Program	file:
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
 financials	internal/financials/params.go	/^package financials$/;"	p
