@@ -54,6 +54,39 @@ The API will be available at `http://localhost:8080`.
    docker run -p 8080:8080 financialapi
    ```
 
+### Using Docker with Benchmark
+
+You can run tests and benchmarks inside a Docker container without installing Go on your local machine.
+
+1. First, ensure you have built the Docker image as described in the "Building and Running" section.
+
+2. To run all tests:
+   ```
+   docker run --rm financialapi go test ./...
+   ```
+
+3. To run tests with coverage:
+   ```
+   docker run --rm financialapi sh -c "go test -coverprofile=coverage.out ./... && go tool cover -func=coverage.out"
+   ```
+
+4. To run all benchmarks:
+   ```
+   docker run --rm financialapi go test -bench=. ./...
+   ```
+
+5. To run benchmarks with memory allocation statistics:
+   ```
+   docker run --rm financialapi go test -bench=. -benchmem ./...
+   ```
+
+6. To run tests or benchmarks for a specific package (e.g., goalseek):
+   ```
+   docker run --rm financialapi go test -bench=. ./internal/goalseek
+   ```
+
+Note: When running tests or benchmarks in Docker, you won't be able to generate an HTML coverage report or use the Go profiling tools directly. If you need these features, consider running the tests locally with Go installed.
+
 The API will be available at `http://localhost:8080`.
 ## Testing and Benchmarking
 
