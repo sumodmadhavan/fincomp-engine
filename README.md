@@ -176,6 +176,89 @@ Ben-Israel, A. (2001). Newton's method with modified functions. Contemporary Mat
 
 This paper provides insights into the convergence properties and various modifications of the Newton-Raphson method, which can be particularly useful for understanding the theoretical foundations of our implementation.
 
+## GoalSeek and Newton-Raphson Method
+
+### GoalSeek Functionality
+
+The GoalSeek function in our API aims to find the optimal warranty rate that achieves a target profit. It uses the Newton-Raphson method to iteratively approximate the solution.
+
+### Newton-Raphson Method
+
+The Newton-Raphson method is an efficient algorithm for finding roots of a real-valued function. In our case, we use it to find the warranty rate that results in a specific target profit.
+
+The basic formula for the Newton-Raphson method is:
+
+x_{n+1} = x_n - f(x_n) / f'(x_n)
+
+Where:
+- x_n is the current approximation
+- f(x_n) is the function value at x_n
+- f'(x_n) is the derivative of the function at x_n
+
+### Implementation
+
+Here's a simplified version of our Newton-Raphson implementation:
+
+```go
+func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {
+    objective := func(rate float64) (float64, error) {
+        profit, err := CalculateFinancials(rate, params)
+        if err != nil {
+            return 0, err
+        }
+        return profit - targetProfit, nil
+    }
+
+    derivative := func(rate float64) (float64, error) {
+        epsilon := 1e-6
+        f1, err1 := objective(rate + epsilon)
+        f2, err2 := objective(rate)
+        if err1 != nil || err2 != nil {
+            return 0, fmt.Errorf("error calculating derivative")
+        }
+        return (f1 - f2) / epsilon, nil
+    }
+
+    return NewtonRaphson(objective, derivative, initialGuess, 1e-8, 100)
+}
+
+func NewtonRaphson(f, df func(float64) (float64, error), x0, xtol float64, maxIter int) (float64, int, error) {
+    for i := 0; i < maxIter; i++ {
+        fx, err := f(x0)
+        if err != nil {
+            return 0, i, err
+        }
+        if math.Abs(fx) < xtol {
+            return x0, i + 1, nil
+        }
+
+        dfx, err := df(x0)
+        if err != nil {
+            return 0, i, err
+        }
+        if dfx == 0 {
+            return 0, i, fmt.Errorf("derivative is zero, can't proceed with Newton-Raphson")
+        }
+
+        x0 = x0 - fx/dfx
+    }
+    return 0, maxIter, fmt.Errorf("Newton-Raphson method did not converge within %d iterations", maxIter)
+}
+```
+
+In this implementation:
+
+1. We define an `objective` function that calculates the difference between the computed profit and the target profit.
+2. We approximate the derivative using a finite difference method.
+3. The `NewtonRaphson` function implements the iterative process, updating the guess until it converges or reaches the maximum number of iterations.
+
+The GoalSeek functionality uses this method to find the warranty rate that achieves the target profit, making it a powerful tool for financial modeling and decision-making.
+
+For a detailed mathematical treatment of the Newton-Raphson method, refer to:
+
+Ben-Israel, A. (2001). Newton's method with modified functions. Contemporary Mathematics, 204, 39-50.
+https://www.sciencedirect.com/science/article/pii/S0377042700004350
+
 ## Sample Requests and Responses
 
 ### GoalSeek Endpoint
