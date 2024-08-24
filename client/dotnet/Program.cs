@@ -42,7 +42,7 @@ public class Program
     {
         var request = new GoalSeekRequest
         {
-            NumYears = 35,
+            NumYears = 10,
             AuHours = 450,
             InitialTSN = 100,
             RateEscalation = 5,
@@ -80,7 +80,7 @@ public class Program
         }
     }
 
-    private static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)
+    public static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)
     {
         var json = JsonSerializer.Serialize(request);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
