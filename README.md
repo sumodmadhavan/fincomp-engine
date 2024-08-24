@@ -16,28 +16,9 @@ This project is a REST API for financial calculations, specifically focused on G
 - Go 1.21 or later
 - Docker (optional, for containerized deployment)
 
-## Structure 
-financial_model/
-├── cmd/
-│   └── server/
-│       └── main.go
-├── internal/
-│   ├── api/
-│   │   ├── handlers.go
-│   │   └── server.go
-│   ├── goalseek/
-│   │   ├── goalseek.go
-│   │   └── goalseek_test.go
-│   ├── runout/
-│   │   ├── runout.go
-│   │   └── runout_test.go
-│   └── financials/
-│       ├── params.go
-│       └── calculations.go
-├── pkg/
-│   └── testutils/
-│       └── testutils.go
-└── go.mod
+## Core Structure 
+![image](https://github.com/user-attachments/assets/69f6ef9d-6746-48e4-b46a-8e0e994b2a37)
+
 
 ## Building and Running
 
