@@ -168,6 +168,14 @@ The Newton-Raphson method works as follows:
 
 In our GoalSeek implementation, we use this method to find the warranty rate that achieves a target profit. The function we're finding the root of is the difference between the calculated profit and the target profit.
 
+The Newton-Raphson method is a powerful numerical technique for finding roots of real-valued functions. For a detailed mathematical treatment and analysis of the method.
+
+Ben-Israel, A. (2001). Newton's method with modified functions. Contemporary Mathematics, 204, 39-50.
+
+[Refer to this article on ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0377042700004350)
+
+This paper provides insights into the convergence properties and various modifications of the Newton-Raphson method, which can be particularly useful for understanding the theoretical foundations of our implementation.
+
 ## Sample Requests and Responses
 
 ### GoalSeek Endpoint
