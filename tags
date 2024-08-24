@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AssertEqual	pkg/testutils/testutils.go	/^func AssertEqual(t *testing.T, expected, actual interface{}) {$/;"	f
+AssertError	pkg/testutils/testutils.go	/^func AssertError(t *testing.T, err error) {$/;"	f
+AssertNoError	pkg/testutils/testutils.go	/^func AssertNoError(t *testing.T, err error) {$/;"	f
+BenchmarkCalculate	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculate(b *testing.B) {$/;"	f
+BenchmarkCalculate	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculate(b *testing.B) {$/;"	f
+BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
+BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
+Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
+Calculate	internal/runout/runout.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
+CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
+FinancialParams	internal/financials/params.go	/^type FinancialParams struct {$/;"	t
+GoalSeek	internal/financials/calculations.go	/^func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {$/;"	f
+GoalSeekHandler	internal/api/handlers.go	/^func (s *Server) GoalSeekHandler(c *gin.Context) {$/;"	f
+NewServer	internal/api/server.go	/^func NewServer() *Server {$/;"	f
+NewtonRaphson	internal/financials/calculations.go	/^func NewtonRaphson(f, df func(float64) (float64, error), x0, xtol float64, maxIter int) (float64, int, error) {$/;"	f
+Run	internal/api/server.go	/^func (s *Server) Run(addr string) error {$/;"	f
+RunoutHandler	internal/api/handlers.go	/^func (s *Server) RunoutHandler(c *gin.Context) {$/;"	f
+Server	internal/api/server.go	/^type Server struct {$/;"	t
+TestCalculate	internal/goalseek/goalseek_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
+TestCalculate	internal/runout/runout_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
+TestCalculateFinancials	internal/financials/calculations_test.go	/^func TestCalculateFinancials(t *testing.T) {$/;"	f
+TestGoalSeek	internal/financials/calculations_test.go	/^func TestGoalSeek(t *testing.T) {$/;"	f
+TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
+Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
+api	internal/api/handlers.go	/^package api$/;"	p
+api	internal/api/handlers_test.go	/^package api$/;"	p
+api	internal/api/server.go	/^package api$/;"	p
+financials	internal/financials/calculations.go	/^package financials$/;"	p
+financials	internal/financials/calculations_test.go	/^package financials$/;"	p
+financials	internal/financials/params.go	/^package financials$/;"	p
+goalseek	internal/goalseek/goalseek.go	/^package goalseek$/;"	p
+goalseek	internal/goalseek/goalseek_benchmark_test.go	/^package goalseek$/;"	p
+goalseek	internal/goalseek/goalseek_test.go	/^package goalseek$/;"	p
+main	cmd/server/main.go	/^func main() {$/;"	f
+main	cmd/server/main.go	/^package main$/;"	p
+runout	internal/runout/runout.go	/^package runout$/;"	p
+runout	internal/runout/runout_benchmark_test.go	/^package runout$/;"	p
+runout	internal/runout/runout_test.go	/^package runout$/;"	p
+setupRoutes	internal/api/server.go	/^func (s *Server) setupRoutes() {$/;"	f
+testutils	pkg/testutils/testutils.go	/^package testutils$/;"	p
