@@ -1,34 +1,32 @@
 package runout
 
 import (
-	"financialapi/internal/financials"
-	"financialapi/pkg/testutils"
 	"testing"
+	"time"
 )
 
 func TestCalculate(t *testing.T) {
-	params := financials.FinancialParams{
-		NumYears:       10,
-		AuHours:        450,
-		InitialTSN:     100,
-		RateEscalation: 5,
-		AIC:            10,
-		HSITSN:         1000,
-		OverhaulTSN:    3000,
-		HSICost:        50000,
-		OverhaulCost:   100000,
-		TargetProfit:   3000000,
-		InitialRate:    320,
+	params := RunoutParams{
+		ContractStartDate:  time.Date(2022, 1, 14, 0, 0, 0, 0, time.UTC),
+		ContractEndDate:    time.Date(2034, 2, 14, 0, 0, 0, 0, time.UTC),
+		AUHours:            480,
+		WarrantyRate:       243.6,
+		FirstRunRate:       255.13,
+		SecondRunRate:      255.13,
+		ThirdRunRate:       255.13,
+		ManagementFees:     15.0,
+		AICFees:            20.0,
+		TrustLoadFees:      2.98,
+		BuyIn:              1352291.05,
+		RateEscalation:     8.75,
+		FlightHoursMinimum: 150,
 	}
 
 	result, err := Calculate(params)
-	testutils.AssertNoError(t, err)
-
-	message, ok := result["message"].(string)
-	if !ok {
-		t.Fatalf("message is not a string")
+	if err != nil {
+		t.Fatalf("Calculate returned an error: %v", err)
 	}
 
-	expectedMessage := "Runout calculation is under development"
-	testutils.AssertEqual(t, expectedMessage, message)
+	// Add assertions to check the correctness of the result
+	// Compare with expected values from the Python script output
 }
