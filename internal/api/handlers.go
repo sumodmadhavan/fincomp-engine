@@ -30,9 +30,8 @@ func (s *Server) GoalSeekHandler(c *gin.Context) {
 
 	c.JSON(http.StatusOK, result)
 }
-
 func (s *Server) RunoutHandler(c *gin.Context) {
-	var params financials.FinancialParams
+	var params runout.RunoutParams
 	if err := c.ShouldBindJSON(&params); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
