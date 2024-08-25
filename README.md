@@ -300,8 +300,8 @@ POST /runout
 Content-Type: application/json
 
 {
-  "contractStartDate": "2023-01-01T00:00:00Z",
-  "contractEndDate": "2034-12-31T23:59:59Z",
+  "contractStartDate": "2022-01-14T00:00:00Z",
+  "contractEndDate": "2034-02-14T23:59:59Z",
   "auHours": 480,
   "warrantyRate": 243.6,
   "firstRunRate": 255.13,
@@ -310,7 +310,7 @@ Content-Type: application/json
   "managementFees": 15,
   "aicFees": 20,
   "trustLoadFees": 2.98,
-  "buyIn": 1352291,
+  "buyIn": 1352291.05,
   "rateEscalation": 8.75,
   "flightHoursMinimum": 150,
   "numOfDaysInYear": 365,
