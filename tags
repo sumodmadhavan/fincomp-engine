@@ -15,9 +15,12 @@ BenchmarkCalculate	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalc
 BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
-Calculate	internal/runout/runout.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
+Calculate	internal/runout/runout.go	/^func Calculate(params RunoutParams) (RunoutResult, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
 CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    public static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program
+ContractPeriod	internal/runout/runout.go	/^type ContractPeriod struct {$/;"	t
+EngineData	internal/runout/runout.go	/^type EngineData struct {$/;"	t
+EngineParams	internal/runout/runout_params.go	/^type EngineParams struct {$/;"	t
 FinalCumulativeProfit	client/dotnet/Program.cs	/^    public double FinalCumulativeProfit { get; set; }$/;"	p	class:GoalSeekResponse
 FinancialParams	internal/financials/params.go	/^type FinancialParams struct {$/;"	t
 GoalSeek	internal/financials/calculations.go	/^func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {$/;"	f
@@ -41,6 +44,8 @@ Program	client/dotnet/Program.cs	/^public class Program$/;"	c
 RateEscalation	client/dotnet/Program.cs	/^    public double RateEscalation { get; set; }$/;"	p	class:GoalSeekRequest
 Run	internal/api/server.go	/^func (s *Server) Run(addr string) error {$/;"	f
 RunoutHandler	internal/api/handlers.go	/^func (s *Server) RunoutHandler(c *gin.Context) {$/;"	f
+RunoutParams	internal/runout/runout_params.go	/^type RunoutParams struct {$/;"	t
+RunoutResult	internal/runout/runout.go	/^type RunoutResult struct {$/;"	t
 Server	internal/api/server.go	/^type Server struct {$/;"	t
 TargetProfit	client/dotnet/Program.cs	/^    public int TargetProfit { get; set; }$/;"	p	class:GoalSeekRequest
 TestCalculate	internal/goalseek/goalseek_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
@@ -50,9 +55,15 @@ TestGoalSeek	internal/financials/calculations_test.go	/^func TestGoalSeek(t *tes
 TestGoalSeekApi_WithDifferentYears	client/dotnet/GoalSeekApiTests.cs	/^    public async Task TestGoalSeekApi_WithDifferentYears(int numYears, double expectedProfit, int expectedIterations, double expectedWarrantyRate)$/;"	m	class:GoalSeekApiTests
 TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
 Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
+Validate	internal/runout/runout_params.go	/^func (p RunoutParams) Validate() error {$/;"	f
 api	internal/api/handlers.go	/^package api$/;"	p
 api	internal/api/handlers_test.go	/^package api$/;"	p
 api	internal/api/server.go	/^package api$/;"	p
+calculateContractPeriods	internal/runout/runout.go	/^func calculateContractPeriods(startDate, endDate time.Time) []ContractPeriod {$/;"	f
+calculateDaysWithinPeriod	internal/runout/runout.go	/^func calculateDaysWithinPeriod(start, end, periodStart, periodEnd time.Time) int {$/;"	f
+calculateEngineRevenue	internal/runout/runout.go	/^func calculateEngineRevenue(period *ContractPeriod, params RunoutParams, engineIndex int) {$/;"	f
+calculatePeriodDetails	internal/runout/runout.go	/^func calculatePeriodDetails(period *ContractPeriod, params RunoutParams, yearNumber int) {$/;"	f
+calculateTotalRevenues	internal/runout/runout.go	/^func calculateTotalRevenues(result *RunoutResult, params RunoutParams) {$/;"	f
 client	client/dotnet/Program.cs	/^    private static readonly HttpClient client = new HttpClient();$/;"	f	class:Program	file:
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
@@ -62,8 +73,12 @@ goalseek	internal/goalseek/goalseek_benchmark_test.go	/^package goalseek$/;"	p
 goalseek	internal/goalseek/goalseek_test.go	/^package goalseek$/;"	p
 main	cmd/server/main.go	/^func main() {$/;"	f
 main	cmd/server/main.go	/^package main$/;"	p
+max	internal/runout/runout.go	/^func max(a, b time.Time) time.Time {$/;"	f
+min	internal/runout/runout.go	/^func min(a, b time.Time) time.Time {$/;"	f
 runout	internal/runout/runout.go	/^package runout$/;"	p
 runout	internal/runout/runout_benchmark_test.go	/^package runout$/;"	p
+runout	internal/runout/runout_params.go	/^package runout$/;"	p
 runout	internal/runout/runout_test.go	/^package runout$/;"	p
 setupRoutes	internal/api/server.go	/^func (s *Server) setupRoutes() {$/;"	f
+sumEngineFHRevenue	internal/runout/runout.go	/^func sumEngineFHRevenue(engines []EngineData) float64 {$/;"	f
 testutils	pkg/testutils/testutils.go	/^package testutils$/;"	p
