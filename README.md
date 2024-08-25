@@ -300,24 +300,595 @@ POST /runout
 Content-Type: application/json
 
 {
-  "numYears": 10,
-  "auHours": 450,
-  "initialTSN": 100,
-  "rateEscalation": 5,
-  "aic": 10,
-  "hsitsn": 1000,
-  "overhaulTSN": 3000,
-  "hsiCost": 50000,
-  "overhaulCost": 100000,
-  "targetProfit": 3000000,
-  "initialRate": 320
+  "contractStartDate": "2023-01-01T00:00:00Z",
+  "contractEndDate": "2034-12-31T23:59:59Z",
+  "auHours": 480,
+  "warrantyRate": 243.6,
+  "firstRunRate": 255.13,
+  "secondRunRate": 255.13,
+  "thirdRunRate": 255.13,
+  "managementFees": 15,
+  "aicFees": 20,
+  "trustLoadFees": 2.98,
+  "buyIn": 1352291,
+  "rateEscalation": 8.75,
+  "flightHoursMinimum": 150,
+  "numOfDaysInYear": 365,
+  "numOfDaysInMonth": 30,
+  "enrollmentFees": 25000,
+  "numEngines": 2,
+  "engineParams": [
+    {
+      "warrantyExpDate": "2025-10-31T23:59:59Z",
+      "warrantyExpHours": 1000,
+      "firstRunRateSwitchDate": "2026-11-01T00:00:00Z",
+      "secondRunRateSwitchDate": "2027-05-01T00:00:00Z",
+      "thirdRunRateSwitchDate": "2028-07-01T00:00:00Z"
+    },
+    {
+      "warrantyExpDate": "2025-10-31T23:59:59Z",
+      "warrantyExpHours": 1000,
+      "firstRunRateSwitchDate": "2026-11-01T00:00:00Z",
+      "secondRunRateSwitchDate": "2027-05-01T00:00:00Z",
+      "thirdRunRateSwitchDate": "2028-07-01T00:00:00Z"
+    }
+  ]
 }
 ```
 
 Response:
 ```json
 {
-  "message": "Runout calculation is under development"
+    "Periods": [
+        {
+            "StartDate": "2023-01-01T00:00:00Z",
+            "EndDate": "2023-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2023-01-01T23:59:59Z",
+            "RunoutEndDate": "2023-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 1,
+            "RateTrend": 1,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 365,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 116928,
+                    "WarrantyCalc": 88914,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 88914,
+                    "EscalatedRate": 88914,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 365,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 116928,
+                    "WarrantyCalc": 88914,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 88914,
+                    "EscalatedRate": 88914,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 1586147
+        },
+        {
+            "StartDate": "2024-01-01T23:59:59Z",
+            "EndDate": "2024-12-31T23:59:59Z",
+            "NumOfDays": 366,
+            "RunoutStartDate": "2024-01-01T23:59:59Z",
+            "RunoutEndDate": "2024-12-31T23:59:59Z",
+            "NumOfRunoutDays": 366,
+            "ContractYearNumber": 2,
+            "RateTrend": 1.0875,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 366,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 127507.581369863,
+                    "WarrantyCalc": 89157.59999999999,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 89157.59999999999,
+                    "EscalatedRate": 96958.88999999998,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 366,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 127507.581369863,
+                    "WarrantyCalc": 89157.59999999999,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 89157.59999999999,
+                    "EscalatedRate": 96958.88999999998,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 255015.162739726
+        },
+        {
+            "StartDate": "2025-01-01T23:59:59Z",
+            "EndDate": "2025-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2025-01-01T23:59:59Z",
+            "RunoutEndDate": "2025-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 3,
+            "RateTrend": 1.1826562499999997,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 304,
+                    "FirstRunRateDays": 61,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 139379.50084315063,
+                    "WarrantyCalc": 74054.4,
+                    "FirstRunRateCalc": 15562.93,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 89617.32999999999,
+                    "EscalatedRate": 105986.49543281246,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 304,
+                    "FirstRunRateDays": 61,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 139379.50084315063,
+                    "WarrantyCalc": 74054.4,
+                    "FirstRunRateCalc": 15562.93,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 89617.32999999999,
+                    "EscalatedRate": 105986.49543281246,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 278759.00168630126
+        },
+        {
+            "StartDate": "2026-01-01T23:59:59Z",
+            "EndDate": "2026-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2026-01-01T23:59:59Z",
+            "RunoutEndDate": "2026-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 4,
+            "RateTrend": 1.2861386718749996,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 304,
+                    "SecondRunRateDays": 60,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 364,
+                    "FHUtilization": 478.6849315068493,
+                    "FHRevenue": 157072.11170023968,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 77559.52,
+                    "SecondRunRateCalc": 15307.8,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 92867.32,
+                    "EscalatedRate": 119440.2516053906,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 304,
+                    "SecondRunRateDays": 60,
+                    "ThirdRunRateDays": 0,
+                    "TotalDays": 364,
+                    "FHUtilization": 478.6849315068493,
+                    "FHRevenue": 157072.11170023968,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 77559.52,
+                    "SecondRunRateCalc": 15307.8,
+                    "ThirdRunRateCalc": 0,
+                    "Rates": 92867.32,
+                    "EscalatedRate": 119440.2516053906,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 314144.22340047936
+        },
+        {
+            "StartDate": "2027-01-01T23:59:59Z",
+            "EndDate": "2027-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2027-01-01T23:59:59Z",
+            "RunoutEndDate": "2027-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 5,
+            "RateTrend": 1.3986758056640618,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 120,
+                    "ThirdRunRateDays": 244,
+                    "TotalDays": 364,
+                    "FHUtilization": 478.6849315068493,
+                    "FHRevenue": 170815.92147401063,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 30615.6,
+                    "ThirdRunRateCalc": 62251.72,
+                    "Rates": 92867.32,
+                    "EscalatedRate": 129891.27362086225,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 120,
+                    "ThirdRunRateDays": 244,
+                    "TotalDays": 364,
+                    "FHUtilization": 478.6849315068493,
+                    "FHRevenue": 170815.92147401063,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 30615.6,
+                    "ThirdRunRateCalc": 62251.72,
+                    "Rates": 92867.32,
+                    "EscalatedRate": 129891.27362086225,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 341631.84294802125
+        },
+        {
+            "StartDate": "2028-01-01T23:59:59Z",
+            "EndDate": "2028-12-31T23:59:59Z",
+            "NumOfDays": 366,
+            "RunoutStartDate": "2028-01-01T23:59:59Z",
+            "RunoutEndDate": "2028-12-31T23:59:59Z",
+            "NumOfRunoutDays": 366,
+            "ContractYearNumber": 6,
+            "RateTrend": 1.521059938659667,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 366,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 186782.9866612447,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93377.58,
+                    "Rates": 93377.58,
+                    "EscalatedRate": 142032.89610698816,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 366,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 186782.9866612447,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93377.58,
+                    "Rates": 93377.58,
+                    "EscalatedRate": 142032.89610698816,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 373565.9733224894
+        },
+        {
+            "StartDate": "2029-01-01T23:59:59Z",
+            "EndDate": "2029-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2029-01-01T23:59:59Z",
+            "RunoutEndDate": "2029-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 7,
+            "RateTrend": 1.6541526832923876,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 202571.5075624257,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 154038.7505422612,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 202571.5075624257,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 154038.7505422612,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 405143.0151248514
+        },
+        {
+            "StartDate": "2030-01-01T23:59:59Z",
+            "EndDate": "2030-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2030-01-01T23:59:59Z",
+            "RunoutEndDate": "2030-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 8,
+            "RateTrend": 1.7988910430804714,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 220296.5144741379,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 167517.14121470903,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 220296.5144741379,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 167517.14121470903,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 440593.0289482758
+        },
+        {
+            "StartDate": "2031-01-01T23:59:59Z",
+            "EndDate": "2031-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2031-01-01T23:59:59Z",
+            "RunoutEndDate": "2031-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 9,
+            "RateTrend": 1.9562940093500123,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 239572.4594906249,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 182174.89107099603,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 239572.4594906249,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 182174.89107099603,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 479144.9189812498
+        },
+        {
+            "StartDate": "2032-01-01T23:59:59Z",
+            "EndDate": "2032-12-31T23:59:59Z",
+            "NumOfDays": 366,
+            "RunoutStartDate": "2032-01-01T23:59:59Z",
+            "RunoutEndDate": "2032-12-31T23:59:59Z",
+            "NumOfRunoutDays": 366,
+            "ContractYearNumber": 10,
+            "RateTrend": 2.1274697351681384,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 366,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 261248.84435275613,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93377.58,
+                    "Rates": 93377.58,
+                    "EscalatedRate": 198657.97539324165,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 366,
+                    "TotalDays": 366,
+                    "FHUtilization": 481.31506849315065,
+                    "FHRevenue": 261248.84435275613,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93377.58,
+                    "Rates": 93377.58,
+                    "EscalatedRate": 198657.97539324165,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 522497.68870551226
+        },
+        {
+            "StartDate": "2033-01-01T23:59:59Z",
+            "EndDate": "2033-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2033-01-01T23:59:59Z",
+            "RunoutEndDate": "2033-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 11,
+            "RateTrend": 2.31362333699535,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 283331.8665444593,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 215450.27351818263,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 283331.8665444593,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 215450.27351818263,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 566663.7330889186
+        },
+        {
+            "StartDate": "2034-01-01T23:59:59Z",
+            "EndDate": "2034-12-31T23:59:59Z",
+            "NumOfDays": 365,
+            "RunoutStartDate": "2034-01-01T23:59:59Z",
+            "RunoutEndDate": "2034-12-31T23:59:59Z",
+            "NumOfRunoutDays": 365,
+            "ContractYearNumber": 12,
+            "RateTrend": 2.516065378982443,
+            "Engines": [
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 308123.4048670995,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 234302.1724510236,
+                    "Shortfall": 0
+                },
+                {
+                    "WarrantyRateDays": 0,
+                    "FirstRunRateDays": 0,
+                    "SecondRunRateDays": 0,
+                    "ThirdRunRateDays": 365,
+                    "TotalDays": 365,
+                    "FHUtilization": 480,
+                    "FHRevenue": 308123.4048670995,
+                    "WarrantyCalc": 0,
+                    "FirstRunRateCalc": 0,
+                    "SecondRunRateCalc": 0,
+                    "ThirdRunRateCalc": 93122.45,
+                    "Rates": 93122.45,
+                    "EscalatedRate": 234302.1724510236,
+                    "Shortfall": 0
+                }
+            ],
+            "TotalFHRevenue": 616246.809734199
+        }
+    ],
+    "TotalFHRevenue": 6179552.398680025,
+    "MgmtFeeRevenue": 724089.2098020037,
+    "AICRevenue": 820634.4377756042,
+    "TrustLoadRevenue": 122274.53122856501,
+    "TrustRevenue": 4512554.219873852,
+    "TotalRevenue": 6179552.398680025,
+    "EnrollmentFees": 25000,
+    "BuyIn": 1352291
 }
 ```
 
