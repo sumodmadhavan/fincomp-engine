@@ -14,6 +14,8 @@ BenchmarkCalculate	internal/goalseek/goalseek_benchmark_test.go	/^func Benchmark
 BenchmarkCalculate	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculate(b *testing.B) {$/;"	f
 BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
+BenchmarkCalculateWithVaryingContractLengths	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingContractLengths(b *testing.B) {$/;"	f
+BenchmarkCalculateWithVaryingEngineNumbers	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingEngineNumbers(b *testing.B) {$/;"	f
 Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 Calculate	internal/runout/runout.go	/^func Calculate(params RunoutParams) (RunoutResult, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
@@ -56,6 +58,7 @@ TestGoalSeekApi_WithDifferentYears	client/dotnet/GoalSeekApiTests.cs	/^    publi
 TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
 Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
 Validate	internal/runout/runout_params.go	/^func (p RunoutParams) Validate() error {$/;"	f
+almostEqual	internal/runout/runout_test.go	/^func almostEqual(a, b, tolerance float64) bool {$/;"	f
 api	internal/api/handlers.go	/^package api$/;"	p
 api	internal/api/handlers_test.go	/^package api$/;"	p
 api	internal/api/server.go	/^package api$/;"	p
@@ -68,6 +71,7 @@ client	client/dotnet/Program.cs	/^    private static readonly HttpClient client 
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
 financials	internal/financials/params.go	/^package financials$/;"	p
+getTestParams	internal/runout/runout_benchmark_test.go	/^func getTestParams() RunoutParams {$/;"	f
 goalseek	internal/goalseek/goalseek.go	/^package goalseek$/;"	p
 goalseek	internal/goalseek/goalseek_benchmark_test.go	/^package goalseek$/;"	p
 goalseek	internal/goalseek/goalseek_test.go	/^package goalseek$/;"	p
