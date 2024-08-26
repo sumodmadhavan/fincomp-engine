@@ -15,7 +15,6 @@ BenchmarkCalculate	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalc
 BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 BenchmarkCalculateWithVaryingContractLengths	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingContractLengths(b *testing.B) {$/;"	f
-BenchmarkCalculateWithVaryingEngineNumbers	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingEngineNumbers(b *testing.B) {$/;"	f
 Calculate	internal/runout/runout.go	/^func Calculate(params RunoutParams) (RunoutResult, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
 CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    public static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program
@@ -62,7 +61,6 @@ TargetProfit	client/dotnet/Program.cs	/^    public int TargetProfit { get; set; 
 TestCalculateFinancials	internal/financials/calculations_test.go	/^func TestCalculateFinancials(t *testing.T) {$/;"	f
 TestGoalSeekApi_WithDifferentYears	client/dotnet/GoalSeekApiTests.cs	/^    public async Task TestGoalSeekApi_WithDifferentYears(int numYears, double expectedProfit, int expectedIterations, double expectedWarrantyRate)$/;"	m	class:GoalSeekApiTests
 TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
-TestRunoutEngine	internal/runout/runout_test.go	/^func TestRunoutEngine(t *testing.T) {$/;"	f
 Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
 Validate	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) Validate() error {$/;"	f
 Validate	internal/runout/runout.go	/^func (r *RunoutCalculator) Validate() error {$/;"	f
@@ -93,6 +91,7 @@ main	cmd/server/main.go	/^package main$/;"	p
 max	internal/runout/runout.go	/^func max(a, b time.Time) time.Time {$/;"	f
 min	internal/runout/runout.go	/^func min(a, b time.Time) time.Time {$/;"	f
 rateTrendValues	internal/runout/runout.go	/^var rateTrendValues = []float64{$/;"	v
+runCalculation	internal/runout/runout_benchmark_test.go	/^func runCalculation(b *testing.B, params RunoutParams) {$/;"	f
 runout	internal/runout/runout.go	/^package runout$/;"	p
 runout	internal/runout/runout_benchmark_test.go	/^package runout$/;"	p
 runout	internal/runout/runout_params.go	/^package runout$/;"	p

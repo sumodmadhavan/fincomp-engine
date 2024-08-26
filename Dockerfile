@@ -1,5 +1,6 @@
-# Start from the official Go image with version 1.21
+# Start from the official Go image with version 1.23
 FROM golang:1.23 AS builder
+
 # Set the working directory inside the container
 WORKDIR /app
 
@@ -11,6 +12,9 @@ RUN go mod download
 
 # Copy the source code into the container
 COPY . .
+
+# Run tests
+RUN go test -v ./...
 
 # Build the application
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main ./cmd/server
