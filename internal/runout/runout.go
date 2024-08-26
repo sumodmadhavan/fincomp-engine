@@ -6,11 +6,40 @@ import (
 	"time"
 )
 
-// Add this new struct to implement the FinancialCalculator interface
+// Ensure RunoutCalculator implements ComputeEngine
+var _ financials.ComputeEngine = (*RunoutCalculator)(nil)
+
 type RunoutCalculator struct {
 	Params RunoutParams
+	result RunoutResult
 }
 
+func (r *RunoutCalculator) Initialize(params interface{}) error {
+	if p, ok := params.(RunoutParams); ok {
+		r.Params = p
+		return nil
+	}
+	return fmt.Errorf("invalid params type for Runout")
+}
+
+func (r *RunoutCalculator) Validate() error {
+	return r.Params.Validate()
+}
+
+func (r *RunoutCalculator) Compute() error {
+	result, err := Calculate(r.Params)
+	if err != nil {
+		return err
+	}
+	r.result = result
+	return nil
+}
+
+func (r *RunoutCalculator) GetResult() interface{} {
+	return r.result
+}
+
+// Existing methods are kept for backwards compatibility
 func (r *RunoutCalculator) CalculateCumulativeProfit() (float64, error) {
 	result, err := Calculate(r.Params)
 	if err != nil {
@@ -24,17 +53,16 @@ func (r *RunoutCalculator) GetParams() interface{} {
 }
 
 func (r *RunoutCalculator) SetParams(params interface{}) error {
-	if p, ok := params.(RunoutParams); ok {
-		r.Params = p
-		return nil
-	}
-	return fmt.Errorf("invalid params type for Runout")
+	return r.Initialize(params)
 }
 
-// Add this function to create a new RunoutCalculator
+// NewRunoutCalculator creates a new RunoutCalculator instance
 func NewRunoutCalculator(params RunoutParams) financials.FinancialCalculator {
-	return &RunoutCalculator{Params: params}
+	rc := &RunoutCalculator{}
+	rc.Initialize(params)
+	return rc
 }
+
 
 type EngineData struct {
 	EngineID          int

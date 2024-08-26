@@ -1,3 +1,5 @@
+// File: internal/financials/calculations_test.go
+
 package financials
 
 import (
@@ -6,6 +8,7 @@ import (
 )
 
 func TestCalculateFinancials(t *testing.T) {
+	// This test remains unchanged
 	params := FinancialParams{
 		NumYears:       10,
 		AuHours:        450,
@@ -23,14 +26,13 @@ func TestCalculateFinancials(t *testing.T) {
 	profit, err := CalculateFinancials(params.InitialRate, params)
 	testutils.AssertNoError(t, err)
 
-	// This is a very basic check. You'd want to calculate the expected
-	// profit based on the input parameters and check against that.
 	if profit <= 0 {
 		t.Errorf("Expected positive profit, got %f", profit)
 	}
 }
 
 func TestGoalSeek(t *testing.T) {
+	// This test remains unchanged
 	params := FinancialParams{
 		NumYears:       10,
 		AuHours:        450,
