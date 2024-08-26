@@ -1,11 +1,10 @@
 package api
 
 import (
-	"net/http"
-
 	"financialapi/internal/financials"
 	"financialapi/internal/goalseek"
 	"financialapi/internal/runout"
+	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
@@ -22,6 +21,7 @@ func (s *Server) GoalSeekHandler(c *gin.Context) {
 		return
 	}
 
+	// Use the existing Calculate function to preserve the response format
 	result, err := goalseek.Calculate(params)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -30,6 +30,7 @@ func (s *Server) GoalSeekHandler(c *gin.Context) {
 
 	c.JSON(http.StatusOK, result)
 }
+
 func (s *Server) RunoutHandler(c *gin.Context) {
 	var params runout.RunoutParams
 	if err := c.ShouldBindJSON(&params); err != nil {
@@ -42,6 +43,7 @@ func (s *Server) RunoutHandler(c *gin.Context) {
 		return
 	}
 
+	// Use the existing Calculate function to preserve the response format
 	result, err := runout.Calculate(params)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})

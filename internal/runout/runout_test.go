@@ -128,3 +128,83 @@ func TestCalculate(t *testing.T) {
 		t.Errorf("Cumulative Total Revenue incorrect. Expected 4805005.2476703655, got %f", result.CumulativeTotalRevenue)
 	}
 }
+
+func TestRunoutCalculator(t *testing.T) {
+	params := RunoutParams{
+		ContractStartDate:  time.Date(2022, 1, 14, 0, 0, 0, 0, time.UTC),
+		ContractEndDate:    time.Date(2034, 2, 14, 23, 59, 59, 0, time.UTC),
+		AUHours:            480,
+		WarrantyRate:       243.6,
+		FirstRunRate:       255.13,
+		SecondRunRate:      255.13,
+		ThirdRunRate:       255.13,
+		ManagementFees:     15.0,
+		AICFees:            20.0,
+		TrustLoadFees:      2.98,
+		BuyIn:              1352291.05,
+		RateEscalation:     8.75,
+		FlightHoursMinimum: 150,
+		NumOfDaysInYear:    365,
+		NumOfDaysInMonth:   30,
+		EnrollmentFees:     25000,
+		NumEngines:         2,
+		EngineParams: []EngineParams{
+			{
+				WarrantyExpDate:         time.Date(2025, 10, 31, 23, 59, 59, 0, time.UTC),
+				WarrantyExpHours:        1000,
+				FirstRunRateSwitchDate:  time.Date(2026, 11, 1, 0, 0, 0, 0, time.UTC),
+				SecondRunRateSwitchDate: time.Date(2027, 5, 1, 0, 0, 0, 0, time.UTC),
+				ThirdRunRateSwitchDate:  time.Date(2028, 7, 1, 0, 0, 0, 0, time.UTC),
+			},
+			{
+				WarrantyExpDate:         time.Date(2025, 10, 31, 23, 59, 59, 0, time.UTC),
+				WarrantyExpHours:        1000,
+				FirstRunRateSwitchDate:  time.Date(2026, 11, 1, 0, 0, 0, 0, time.UTC),
+				SecondRunRateSwitchDate: time.Date(2027, 5, 1, 0, 0, 0, 0, time.UTC),
+				ThirdRunRateSwitchDate:  time.Date(2028, 7, 1, 0, 0, 0, 0, time.UTC),
+			},
+		},
+	}
+
+	calculator := NewRunoutCalculator(params)
+
+	// Test CalculateCumulativeProfit
+	profit, err := calculator.CalculateCumulativeProfit()
+	if err != nil {
+		t.Fatalf("CalculateCumulativeProfit returned an error: %v", err)
+	}
+	if !almostEqual(profit, 4805005.2476703655, 0.01) {
+		t.Errorf("Expected cumulative profit of 4805005.2476703655, got %f", profit)
+	}
+
+	// Test GetParams
+	retrievedParams, ok := calculator.GetParams().(RunoutParams)
+	if !ok {
+		t.Fatalf("GetParams did not return RunoutParams")
+	}
+	if retrievedParams.ContractStartDate != params.ContractStartDate {
+		t.Errorf("GetParams returned incorrect ContractStartDate")
+	}
+	// Add more checks for other fields as needed
+
+	// Test SetParams
+	newParams := RunoutParams{
+		ContractStartDate: time.Date(2023, 1, 1, 0, 0, 0, 0, time.UTC),
+		ContractEndDate:   time.Date(2033, 12, 31, 23, 59, 59, 0, time.UTC),
+		AUHours:           500,
+		// ... set other fields as needed
+	}
+	err = calculator.SetParams(newParams)
+	if err != nil {
+		t.Fatalf("SetParams returned an error: %v", err)
+	}
+
+	updatedParams, ok := calculator.GetParams().(RunoutParams)
+	if !ok {
+		t.Fatalf("GetParams did not return RunoutParams after SetParams")
+	}
+	if updatedParams.ContractStartDate != newParams.ContractStartDate {
+		t.Errorf("SetParams did not update ContractStartDate correctly")
+	}
+	// Add more checks for other fields as needed
+}

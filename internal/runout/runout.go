@@ -1,8 +1,40 @@
 package runout
 
 import (
+	"financialapi/internal/financials"
+	"fmt"
 	"time"
 )
+
+// Add this new struct to implement the FinancialCalculator interface
+type RunoutCalculator struct {
+	Params RunoutParams
+}
+
+func (r *RunoutCalculator) CalculateCumulativeProfit() (float64, error) {
+	result, err := Calculate(r.Params)
+	if err != nil {
+		return 0, err
+	}
+	return result.CumulativeTotalRevenue, nil
+}
+
+func (r *RunoutCalculator) GetParams() interface{} {
+	return r.Params
+}
+
+func (r *RunoutCalculator) SetParams(params interface{}) error {
+	if p, ok := params.(RunoutParams); ok {
+		r.Params = p
+		return nil
+	}
+	return fmt.Errorf("invalid params type for Runout")
+}
+
+// Add this function to create a new RunoutCalculator
+func NewRunoutCalculator(params RunoutParams) financials.FinancialCalculator {
+	return &RunoutCalculator{Params: params}
+}
 
 type EngineData struct {
 	EngineID          int
