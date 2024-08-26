@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "ca5b7cd6-ed6b-4a2b-b623-79c634318aee",
+		"name": "Fin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4931840"
+	},
+	"item": [
+		{
+			"name": "Rust",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"target_profit\": 3000000,\r\n  \"params\": {\r\n    \"num_years\": 35,\r\n    \"au_hours\": 450.0,\r\n    \"initial_tsn\": 100.0,\r\n    \"rate_escalation\": 5.0,\r\n    \"aic\": 10.0,\r\n    \"hsi_tsn\": 1000.0,\r\n    \"overhaul_tsn\": 3000.0,\r\n    \"hsi_cost\": 50000.0,\r\n    \"overhaul_cost\": 100000.0\r\n  },\r\n  \"initial_guess\": 320.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/goal_seek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"goal_seek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Go",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numYears\": 10,\r\n  \"auHours\": 450,\r\n  \"initialTSN\": 100,\r\n  \"rateEscalation\": 5,\r\n  \"aic\": 10,\r\n  \"hsitsn\": 1000,\r\n  \"overhaulTSN\": 3000,\r\n  \"hsiCost\": 50000,\r\n  \"overhaulCost\": 100000,\r\n  \"targetProfit\": 3000000,\r\n  \"initialRate\": 320\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/goalseek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"goalseek"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Go",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contractStartDate\": \"2023-01-01T00:00:00Z\",\r\n  \"contractEndDate\": \"2034-12-31T23:59:59Z\",\r\n  \"auHours\": 480,\r\n  \"warrantyRate\": 243.6,\r\n  \"firstRunRate\": 255.13,\r\n  \"secondRunRate\": 255.13,\r\n  \"thirdRunRate\": 255.13,\r\n  \"managementFees\": 15,\r\n  \"aicFees\": 20,\r\n  \"trustLoadFees\": 2.98,\r\n  \"buyIn\": 1352291,\r\n  \"rateEscalation\": 8.75,\r\n  \"flightHoursMinimum\": 150,\r\n  \"numOfDaysInYear\": 365,\r\n  \"numOfDaysInMonth\": 30,\r\n  \"enrollmentFees\": 25000,\r\n  \"numEngines\": 2,\r\n  \"engineParams\": [\r\n    {\r\n      \"warrantyExpDate\": \"2025-10-31T23:59:59Z\",\r\n      \"warrantyExpHours\": 1000,\r\n      \"firstRunRateSwitchDate\": \"2026-11-01T00:00:00Z\",\r\n      \"secondRunRateSwitchDate\": \"2027-05-01T00:00:00Z\",\r\n      \"thirdRunRateSwitchDate\": \"2028-07-01T00:00:00Z\"\r\n    },\r\n    {\r\n      \"warrantyExpDate\": \"2025-10-31T23:59:59Z\",\r\n      \"warrantyExpHours\": 1000,\r\n      \"firstRunRateSwitchDate\": \"2026-11-01T00:00:00Z\",\r\n      \"secondRunRateSwitchDate\": \"2027-05-01T00:00:00Z\",\r\n      \"thirdRunRateSwitchDate\": \"2028-07-01T00:00:00Z\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/runout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"runout"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Haskell",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"initialRate\": 420.0,\r\n  \"targetProfit\": 30000000000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runout_vanilla",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contractStartDate\": \"2022-01-14T00:00:00Z\",\r\n  \"contractEndDate\": \"2034-02-14T23:59:59Z\",\r\n  \"auHours\": 480.0,\r\n  \"warrantyRate\": 243.6,\r\n  \"firstRunRate\": 255.13,\r\n  \"secondRunRate\": 255.13,\r\n  \"thirdRunRate\": 255.13,\r\n  \"managementFees\": 15.0,\r\n  \"aicFees\": 20.0,\r\n  \"trustLoadFees\": 2.98,\r\n  \"buyIn\": 1352291.05,\r\n  \"rateEscalation\": 8.75,\r\n  \"flightHoursMinimum\": 150,\r\n  \"numOfDaysInYear\": 365,\r\n  \"numOfDaysInMonth\": 30,\r\n  \"enrollmentFees\": 25000.0,\r\n  \"numEngines\": 2,\r\n  \"engineParams\": [\r\n    {\r\n      \"warrantyExpDate\": \"2025-10-31T23:59:59Z\",\r\n      \"warrantyExpHours\": 1000,\r\n      \"firstRunRateSwitchDate\": \"2026-11-01T00:00:00Z\",\r\n      \"secondRunRateSwitchDate\": \"2027-05-01T00:00:00Z\",\r\n      \"thirdRunRateSwitchDate\": \"2028-07-01T00:00:00Z\"\r\n    },\r\n    {\r\n      \"warrantyExpDate\": \"2025-10-31T23:59:59Z\",\r\n      \"warrantyExpHours\": 1000,\r\n      \"firstRunRateSwitchDate\": \"2026-11-01T00:00:00Z\",\r\n      \"secondRunRateSwitchDate\": \"2027-05-01T00:00:00Z\",\r\n      \"thirdRunRateSwitchDate\": \"2028-07-01T00:00:00Z\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/runout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"runout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
