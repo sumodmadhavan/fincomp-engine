@@ -1,3 +1,5 @@
+// File: internal/runout/runout_benchmark_test.go
+
 package runout
 
 import (
@@ -44,15 +46,33 @@ func getTestParams() RunoutParams {
 	}
 }
 
+func runCalculation(b *testing.B, params RunoutParams) {
+	engine := NewRunoutCalculator(params)
+
+	if err := engine.Initialize(params); err != nil {
+		b.Fatalf("Initialize error: %v", err)
+	}
+
+	if err := engine.Validate(); err != nil {
+		b.Fatalf("Validate error: %v", err)
+	}
+
+	if err := engine.Compute(); err != nil {
+		b.Fatalf("Compute error: %v", err)
+	}
+
+	result := engine.GetResult()
+	if _, ok := result.(RunoutResult); !ok {
+		b.Fatalf("GetResult did not return a RunoutResult")
+	}
+}
+
 func BenchmarkCalculate(b *testing.B) {
 	params := getTestParams()
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		_, err := Calculate(params)
-		if err != nil {
-			b.Fatal(err)
-		}
+		runCalculation(b, params)
 	}
 }
 
@@ -62,10 +82,7 @@ func BenchmarkCalculateParallel(b *testing.B) {
 
 	b.RunParallel(func(pb *testing.PB) {
 		for pb.Next() {
-			_, err := Calculate(params)
-			if err != nil {
-				b.Fatal(err)
-			}
+			runCalculation(b, params)
 		}
 	})
 }
@@ -81,10 +98,7 @@ func BenchmarkCalculateWithVaryingContractLengths(b *testing.B) {
 			b.ResetTimer()
 
 			for i := 0; i < b.N; i++ {
-				_, err := Calculate(params)
-				if err != nil {
-					b.Fatal(err)
-				}
+				runCalculation(b, params)
 			}
 		})
 	}
@@ -105,10 +119,7 @@ func BenchmarkCalculateWithVaryingEngineNumbers(b *testing.B) {
 			b.ResetTimer()
 
 			for i := 0; i < b.N; i++ {
-				_, err := Calculate(params)
-				if err != nil {
-					b.Fatal(err)
-				}
+				runCalculation(b, params)
 			}
 		})
 	}

@@ -23,10 +23,30 @@ func BenchmarkCalculate(b *testing.B) {
 	b.ResetTimer() // Reset the timer to exclude setup time
 
 	for i := 0; i < b.N; i++ {
-		_, err := Calculate(params)
-		if err != nil {
-			b.Fatal(err)
+		engine := NewGoalSeekCalculator(params)
+
+		// Test Initialize
+		if err := engine.Initialize(params); err != nil {
+			b.Fatalf("Initialize error: %v", err)
 		}
+
+		// Test Validate
+		if err := engine.Validate(); err != nil {
+			b.Fatalf("Validate error: %v", err)
+		}
+
+		// Test Compute
+		if err := engine.Compute(); err != nil {
+			b.Fatalf("Compute error: %v", err)
+		}
+
+		// Test GetResult
+		result := engine.GetResult()
+		resultMap, ok := result.(map[string]interface{})
+		if !ok {
+			b.Fatalf("GetResult did not return a map[string]interface{}")
+		}
+		_ = resultMap
 	}
 }
 
@@ -50,10 +70,30 @@ func BenchmarkCalculateParallel(b *testing.B) {
 
 	b.RunParallel(func(pb *testing.PB) {
 		for pb.Next() {
-			_, err := Calculate(params)
-			if err != nil {
-				b.Fatal(err)
+			engine := NewGoalSeekCalculator(params)
+
+			// Test Initialize
+			if err := engine.Initialize(params); err != nil {
+				b.Fatalf("Initialize error: %v", err)
 			}
+
+			// Test Validate
+			if err := engine.Validate(); err != nil {
+				b.Fatalf("Validate error: %v", err)
+			}
+
+			// Test Compute
+			if err := engine.Compute(); err != nil {
+				b.Fatalf("Compute error: %v", err)
+			}
+
+			// Test GetResult
+			result := engine.GetResult()
+			resultMap, ok := result.(map[string]interface{})
+			if !ok {
+				b.Fatalf("GetResult did not return a map[string]interface{}")
+			}
+			_ = resultMap
 		}
 	})
 }

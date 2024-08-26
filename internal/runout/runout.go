@@ -39,31 +39,16 @@ func (r *RunoutCalculator) GetResult() interface{} {
 	return r.result
 }
 
-// Existing methods are kept for backwards compatibility
-func (r *RunoutCalculator) CalculateCumulativeProfit() (float64, error) {
-	result, err := Calculate(r.Params)
-	if err != nil {
-		return 0, err
-	}
-	return result.CumulativeTotalRevenue, nil
-}
-
-func (r *RunoutCalculator) GetParams() interface{} {
-	return r.Params
-}
-
-func (r *RunoutCalculator) SetParams(params interface{}) error {
-	return r.Initialize(params)
-}
-
 // NewRunoutCalculator creates a new RunoutCalculator instance
-func NewRunoutCalculator(params RunoutParams) financials.FinancialCalculator {
+func NewRunoutCalculator(params RunoutParams) financials.ComputeEngine {
 	rc := &RunoutCalculator{}
 	rc.Initialize(params)
 	return rc
 }
 
-
+/*
+Main calculation begins
+*/
 type EngineData struct {
 	EngineID          int
 	WarrantyRateDays  int

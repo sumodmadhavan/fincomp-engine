@@ -16,21 +16,19 @@ BenchmarkCalculateParallel	internal/goalseek/goalseek_benchmark_test.go	/^func B
 BenchmarkCalculateParallel	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateParallel(b *testing.B) {$/;"	f
 BenchmarkCalculateWithVaryingContractLengths	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingContractLengths(b *testing.B) {$/;"	f
 BenchmarkCalculateWithVaryingEngineNumbers	internal/runout/runout_benchmark_test.go	/^func BenchmarkCalculateWithVaryingEngineNumbers(b *testing.B) {$/;"	f
-Calculate	internal/goalseek/goalseek.go	/^func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {$/;"	f
 Calculate	internal/runout/runout.go	/^func Calculate(params RunoutParams) (RunoutResult, error) {$/;"	f
-CalculateCumulativeProfit	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) CalculateCumulativeProfit() (float64, error) {$/;"	f
-CalculateCumulativeProfit	internal/runout/runout.go	/^func (r *RunoutCalculator) CalculateCumulativeProfit() (float64, error) {$/;"	f
 CalculateFinancials	internal/financials/calculations.go	/^func CalculateFinancials(rate float64, params FinancialParams) (float64, error) {$/;"	f
 CallGoalSeekApiAsync	client/dotnet/Program.cs	/^    public static async Task<GoalSeekResponse?> CallGoalSeekApiAsync(GoalSeekRequest request)$/;"	m	class:Program
-CommonParams	internal/financials/financial_calculator.go	/^type CommonParams struct {$/;"	t
+Compute	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) Compute() error {$/;"	f
+Compute	internal/runout/runout.go	/^func (r *RunoutCalculator) Compute() error {$/;"	f
+ComputeEngine	internal/financials/compute_engine.go	/^type ComputeEngine interface {$/;"	t
 ContractPeriod	internal/runout/runout.go	/^type ContractPeriod struct {$/;"	t
 EngineData	internal/runout/runout.go	/^type EngineData struct {$/;"	t
 EngineParams	internal/runout/runout_params.go	/^type EngineParams struct {$/;"	t
 FinalCumulativeProfit	client/dotnet/Program.cs	/^    public double FinalCumulativeProfit { get; set; }$/;"	p	class:GoalSeekResponse
-FinancialCalculator	internal/financials/financial_calculator.go	/^type FinancialCalculator interface {$/;"	t
 FinancialParams	internal/financials/params.go	/^type FinancialParams struct {$/;"	t
-GetParams	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) GetParams() interface{} {$/;"	f
-GetParams	internal/runout/runout.go	/^func (r *RunoutCalculator) GetParams() interface{} {$/;"	f
+GetResult	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) GetResult() interface{} {$/;"	f
+GetResult	internal/runout/runout.go	/^func (r *RunoutCalculator) GetResult() interface{} {$/;"	f
 GoalSeek	internal/financials/calculations.go	/^func GoalSeek(targetProfit float64, params FinancialParams, initialGuess float64) (float64, int, error) {$/;"	f
 GoalSeek	internal/goalseek/goalseek.go	/^type GoalSeek struct {$/;"	t
 GoalSeekApiTests	client/dotnet/GoalSeekApiTests.cs	/^public class GoalSeekApiTests$/;"	c
@@ -41,10 +39,12 @@ HsiCost	client/dotnet/Program.cs	/^    public int HsiCost { get; set; }$/;"	p	cl
 HsiTsn	client/dotnet/Program.cs	/^    public int HsiTsn { get; set; }$/;"	p	class:GoalSeekRequest
 InitialRate	client/dotnet/Program.cs	/^    public double InitialRate { get; set; }$/;"	p	class:GoalSeekRequest
 InitialTSN	client/dotnet/Program.cs	/^    public int InitialTSN { get; set; }$/;"	p	class:GoalSeekRequest
+Initialize	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) Initialize(params interface{}) error {$/;"	f
+Initialize	internal/runout/runout.go	/^func (r *RunoutCalculator) Initialize(params interface{}) error {$/;"	f
 Iterations	client/dotnet/Program.cs	/^    public int Iterations { get; set; }$/;"	p	class:GoalSeekResponse
 Main	client/dotnet/Program.cs	/^    public static async Task Main()$/;"	m	class:Program
-NewGoalSeekCalculator	internal/goalseek/goalseek.go	/^func NewGoalSeekCalculator(params financials.FinancialParams) financials.FinancialCalculator {$/;"	f
-NewRunoutCalculator	internal/runout/runout.go	/^func NewRunoutCalculator(params RunoutParams) financials.FinancialCalculator {$/;"	f
+NewGoalSeekCalculator	internal/goalseek/goalseek.go	/^func NewGoalSeekCalculator(params financials.FinancialParams) financials.ComputeEngine {$/;"	f
+NewRunoutCalculator	internal/runout/runout.go	/^func NewRunoutCalculator(params RunoutParams) financials.ComputeEngine {$/;"	f
 NewServer	internal/api/server.go	/^func NewServer() *Server {$/;"	f
 NewtonRaphson	internal/financials/calculations.go	/^func NewtonRaphson(f, df func(float64) (float64, error), x0, xtol float64, maxIter int) (float64, int, error) {$/;"	f
 NumYears	client/dotnet/Program.cs	/^    public int NumYears { get; set; }$/;"	p	class:GoalSeekRequest
@@ -55,23 +55,20 @@ Program	client/dotnet/Program.cs	/^public class Program$/;"	c
 RateEscalation	client/dotnet/Program.cs	/^    public double RateEscalation { get; set; }$/;"	p	class:GoalSeekRequest
 Run	internal/api/server.go	/^func (s *Server) Run(addr string) error {$/;"	f
 RunoutCalculator	internal/runout/runout.go	/^type RunoutCalculator struct {$/;"	t
-RunoutHandler	internal/api/handlers.go	/^func (s *Server) RunoutHandler(c *gin.Context) {$/;"	f
 RunoutParams	internal/runout/runout_params.go	/^type RunoutParams struct {$/;"	t
 RunoutResult	internal/runout/runout.go	/^type RunoutResult struct {$/;"	t
 Server	internal/api/server.go	/^type Server struct {$/;"	t
-SetParams	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) SetParams(params interface{}) error {$/;"	f
-SetParams	internal/runout/runout.go	/^func (r *RunoutCalculator) SetParams(params interface{}) error {$/;"	f
 TargetProfit	client/dotnet/Program.cs	/^    public int TargetProfit { get; set; }$/;"	p	class:GoalSeekRequest
-TestCalculate	internal/goalseek/goalseek_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
-TestCalculate	internal/runout/runout_test.go	/^func TestCalculate(t *testing.T) {$/;"	f
 TestCalculateFinancials	internal/financials/calculations_test.go	/^func TestCalculateFinancials(t *testing.T) {$/;"	f
-TestGoalSeek	internal/financials/calculations_test.go	/^func TestGoalSeek(t *testing.T) {$/;"	f
 TestGoalSeekApi_WithDifferentYears	client/dotnet/GoalSeekApiTests.cs	/^    public async Task TestGoalSeekApi_WithDifferentYears(int numYears, double expectedProfit, int expectedIterations, double expectedWarrantyRate)$/;"	m	class:GoalSeekApiTests
-TestGoalSeekCalculator	internal/goalseek/goalseek_test.go	/^func TestGoalSeekCalculator(t *testing.T) {$/;"	f
 TestGoalSeekHandler	internal/api/handlers_test.go	/^func TestGoalSeekHandler(t *testing.T) {$/;"	f
-TestRunoutCalculator	internal/runout/runout_test.go	/^func TestRunoutCalculator(t *testing.T) {$/;"	f
+TestRunoutEngine	internal/runout/runout_test.go	/^func TestRunoutEngine(t *testing.T) {$/;"	f
 Validate	internal/financials/params.go	/^func (p FinancialParams) Validate() error {$/;"	f
+Validate	internal/goalseek/goalseek.go	/^func (gs *GoalSeek) Validate() error {$/;"	f
+Validate	internal/runout/runout.go	/^func (r *RunoutCalculator) Validate() error {$/;"	f
 Validate	internal/runout/runout_params.go	/^func (p RunoutParams) Validate() error {$/;"	f
+_	internal/goalseek/goalseek.go	/^var _ financials.ComputeEngine = (*GoalSeek)(nil)$/;"	v
+_	internal/runout/runout.go	/^var _ financials.ComputeEngine = (*RunoutCalculator)(nil)$/;"	v
 almostEqual	internal/runout/runout_test.go	/^func almostEqual(a, b, tolerance float64) bool {$/;"	f
 api	internal/api/handlers.go	/^package api$/;"	p
 api	internal/api/handlers_test.go	/^package api$/;"	p
@@ -85,7 +82,7 @@ client	client/dotnet/Program.cs	/^    private static readonly HttpClient client 
 engineValues	internal/runout/runout.go	/^var engineValues = []int{1085718, 1085719}$/;"	v
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
-financials	internal/financials/financial_calculator.go	/^package financials$/;"	p
+financials	internal/financials/compute_engine.go	/^package financials$/;"	p
 financials	internal/financials/params.go	/^package financials$/;"	p
 getTestParams	internal/runout/runout_benchmark_test.go	/^func getTestParams() RunoutParams {$/;"	f
 goalseek	internal/goalseek/goalseek.go	/^package goalseek$/;"	p

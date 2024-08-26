@@ -52,29 +52,4 @@ func TestGoalSeekEngine(t *testing.T) {
 	if optimalRate < 300 || optimalRate > 600 {
 		t.Errorf("Expected optimalWarrantyRate between 300 and 600, got %f", optimalRate)
 	}
-
-	// Test existing methods for backwards compatibility
-	profit, err := engine.CalculateCumulativeProfit()
-	testutils.AssertNoError(t, err)
-	if profit <= 0 {
-		t.Errorf("Expected positive profit, got %f", profit)
-	}
-
-	retrievedParams := engine.GetParams()
-	if retrievedParams != params {
-		t.Errorf("GetParams did not return the correct parameters")
-	}
-
-	newParams := financials.FinancialParams{
-		NumYears:     5,
-		TargetProfit: 1500000,
-		InitialRate:  300,
-	}
-	err = engine.SetParams(newParams)
-	testutils.AssertNoError(t, err)
-
-	updatedParams := engine.GetParams()
-	if updatedParams != newParams {
-		t.Errorf("SetParams did not update the parameters correctly")
-	}
 }
