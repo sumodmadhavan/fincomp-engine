@@ -1,23 +1,60 @@
+// File: internal/goalseek/goalseek.go
+
 package goalseek
 
 import (
 	"financialapi/internal/financials"
+	"fmt"
 )
 
-func Calculate(params financials.FinancialParams) (map[string]interface{}, error) {
-	optimalRate, iterations, err := financials.GoalSeek(params.TargetProfit, params, params.InitialRate)
+// Ensure GoalSeek implements ComputeEngine
+var _ financials.ComputeEngine = (*GoalSeek)(nil)
+
+type GoalSeek struct {
+	Params financials.FinancialParams
+	result map[string]interface{}
+}
+
+func (gs *GoalSeek) Initialize(params interface{}) error {
+	if p, ok := params.(financials.FinancialParams); ok {
+		gs.Params = p
+		return nil
+	}
+	return fmt.Errorf("invalid params type for GoalSeek")
+}
+
+func (gs *GoalSeek) Validate() error {
+	return gs.Params.Validate()
+}
+
+func (gs *GoalSeek) Compute() error {
+	optimalRate, iterations, err := financials.GoalSeek(gs.Params.TargetProfit, gs.Params, gs.Params.InitialRate)
 	if err != nil {
-		return nil, err
+		return err
 	}
 
-	finalCumulativeProfit, err := financials.CalculateFinancials(optimalRate, params)
+	finalCumulativeProfit, err := financials.CalculateFinancials(optimalRate, gs.Params)
 	if err != nil {
-		return nil, err
+		return err
 	}
 
-	return map[string]interface{}{
+	gs.result = map[string]interface{}{
 		"optimalWarrantyRate":   optimalRate,
 		"iterations":            iterations,
 		"finalCumulativeProfit": finalCumulativeProfit,
-	}, nil
+	}
+
+	return nil
 }
+
+func (gs *GoalSeek) GetResult() interface{} {
+	return gs.result
+}
+
+// NewGoalSeekCalculator creates a new GoalSeek instance
+func NewGoalSeekCalculator(params financials.FinancialParams) financials.ComputeEngine {
+	gs := &GoalSeek{}
+	gs.Initialize(params)
+	return gs
+}
+

@@ -1,11 +1,12 @@
+// File: api/handlers.go
+
 package api
 
 import (
-	"net/http"
-
 	"financialapi/internal/financials"
 	"financialapi/internal/goalseek"
 	"financialapi/internal/runout"
+	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
@@ -17,19 +18,22 @@ func (s *Server) GoalSeekHandler(c *gin.Context) {
 		return
 	}
 
-	if err := params.Validate(); err != nil {
+	engine := goalseek.NewGoalSeekCalculator(params)
+
+	if err := engine.Validate(); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
-	result, err := goalseek.Calculate(params)
-	if err != nil {
+	if err := engine.Compute(); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
 
+	result := engine.GetResult()
 	c.JSON(http.StatusOK, result)
 }
+
 func (s *Server) RunoutHandler(c *gin.Context) {
 	var params runout.RunoutParams
 	if err := c.ShouldBindJSON(&params); err != nil {
@@ -37,16 +41,18 @@ func (s *Server) RunoutHandler(c *gin.Context) {
 		return
 	}
 
-	if err := params.Validate(); err != nil {
+	engine := runout.NewRunoutCalculator(params)
+
+	if err := engine.Validate(); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
-	result, err := runout.Calculate(params)
-	if err != nil {
+	if err := engine.Compute(); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
 
+	result := engine.GetResult()
 	c.JSON(http.StatusOK, result)
 }

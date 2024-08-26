@@ -1,3 +1,5 @@
+// File: internal/goalseek/goalseek_test.go
+
 package goalseek
 
 import (
@@ -6,7 +8,7 @@ import (
 	"testing"
 )
 
-func TestCalculate(t *testing.T) {
+func TestGoalSeekEngine(t *testing.T) {
 	params := financials.FinancialParams{
 		NumYears:       10,
 		AuHours:        450,
@@ -21,10 +23,28 @@ func TestCalculate(t *testing.T) {
 		InitialRate:    320,
 	}
 
-	result, err := Calculate(params)
+	engine := NewGoalSeekCalculator(params)
+
+	// Test Initialize
+	err := engine.Initialize(params)
 	testutils.AssertNoError(t, err)
 
-	optimalRate, ok := result["optimalWarrantyRate"].(float64)
+	// Test Validate
+	err = engine.Validate()
+	testutils.AssertNoError(t, err)
+
+	// Test Compute
+	err = engine.Compute()
+	testutils.AssertNoError(t, err)
+
+	// Test GetResult
+	result := engine.GetResult()
+	resultMap, ok := result.(map[string]interface{})
+	if !ok {
+		t.Fatalf("GetResult did not return a map[string]interface{}")
+	}
+
+	optimalRate, ok := resultMap["optimalWarrantyRate"].(float64)
 	if !ok {
 		t.Fatalf("optimalWarrantyRate is not a float64")
 	}

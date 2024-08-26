@@ -1,9 +1,54 @@
 package runout
 
 import (
+	"financialapi/internal/financials"
+	"fmt"
 	"time"
 )
 
+// Ensure RunoutCalculator implements ComputeEngine
+var _ financials.ComputeEngine = (*RunoutCalculator)(nil)
+
+type RunoutCalculator struct {
+	Params RunoutParams
+	result RunoutResult
+}
+
+func (r *RunoutCalculator) Initialize(params interface{}) error {
+	if p, ok := params.(RunoutParams); ok {
+		r.Params = p
+		return nil
+	}
+	return fmt.Errorf("invalid params type for Runout")
+}
+
+func (r *RunoutCalculator) Validate() error {
+	return r.Params.Validate()
+}
+
+func (r *RunoutCalculator) Compute() error {
+	result, err := Calculate(r.Params)
+	if err != nil {
+		return err
+	}
+	r.result = result
+	return nil
+}
+
+func (r *RunoutCalculator) GetResult() interface{} {
+	return r.result
+}
+
+// NewRunoutCalculator creates a new RunoutCalculator instance
+func NewRunoutCalculator(params RunoutParams) financials.ComputeEngine {
+	rc := &RunoutCalculator{}
+	rc.Initialize(params)
+	return rc
+}
+
+/*
+Main calculation begins
+*/
 type EngineData struct {
 	EngineID          int
 	WarrantyRateDays  int

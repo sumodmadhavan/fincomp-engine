@@ -1,3 +1,5 @@
+// File: internal/runout/runout_test.go
+
 package runout
 
 import (
@@ -11,7 +13,7 @@ func almostEqual(a, b, tolerance float64) bool {
 	return math.Abs(a-b) <= tolerance
 }
 
-func TestCalculate(t *testing.T) {
+func TestRunoutEngine(t *testing.T) {
 	params := RunoutParams{
 		ContractStartDate:  time.Date(2022, 1, 14, 0, 0, 0, 0, time.UTC),
 		ContractEndDate:    time.Date(2034, 2, 14, 23, 59, 59, 0, time.UTC),
@@ -48,19 +50,40 @@ func TestCalculate(t *testing.T) {
 		},
 	}
 
-	result, err := Calculate(params)
+	engine := NewRunoutCalculator(params)
+
+	// Test Initialize
+	err := engine.Initialize(params)
 	if err != nil {
-		t.Fatalf("Calculate returned an error: %v", err)
+		t.Fatalf("Initialize returned an error: %v", err)
 	}
 
-	// Check the number of periods
-	expectedPeriods := 12
-	if len(result.Periods) != expectedPeriods {
-		t.Errorf("Expected %d periods, got %d", expectedPeriods, len(result.Periods))
+	// Test Validate
+	err = engine.Validate()
+	if err != nil {
+		t.Fatalf("Validate returned an error: %v", err)
+	}
+
+	// Test Compute
+	err = engine.Compute()
+	if err != nil {
+		t.Fatalf("Compute returned an error: %v", err)
+	}
+
+	// Test GetResult
+	result := engine.GetResult()
+	runoutResult, ok := result.(RunoutResult)
+	if !ok {
+		t.Fatalf("GetResult did not return a RunoutResult")
+	}
+
+	// Perform the same checks as in the original TestCalculate function
+	if len(runoutResult.Periods) != 12 {
+		t.Errorf("Expected 12 periods, got %d", len(runoutResult.Periods))
 	}
 
 	// Check the first period
-	firstPeriod := result.Periods[0]
+	firstPeriod := runoutResult.Periods[0]
 	if !firstPeriod.StartDate.Equal(params.ContractStartDate) {
 		t.Errorf("First period start date incorrect. Expected %v, got %v", params.ContractStartDate, firstPeriod.StartDate)
 	}
@@ -84,7 +107,7 @@ func TestCalculate(t *testing.T) {
 	}
 
 	// Check the last period
-	lastPeriod := result.Periods[len(result.Periods)-1]
+	lastPeriod := runoutResult.Periods[len(runoutResult.Periods)-1]
 	if !lastPeriod.EndDate.Equal(time.Date(2033, 12, 31, 23, 59, 59, 0, time.UTC)) {
 		t.Errorf("Last period end date incorrect. Expected %v, got %v", time.Date(2033, 12, 31, 23, 59, 59, 0, time.UTC), lastPeriod.EndDate)
 	}
@@ -96,35 +119,35 @@ func TestCalculate(t *testing.T) {
 	}
 
 	// Check overall totals
-	if !almostEqual(result.TotalFHRevenue, 4805005.2476703655, 0.01) {
-		t.Errorf("Total FH revenue incorrect. Expected 4805005.2476703655, got %f", result.TotalFHRevenue)
+	if !almostEqual(runoutResult.TotalFHRevenue, 4805005.2476703655, 0.01) {
+		t.Errorf("Total FH revenue incorrect. Expected 4805005.2476703655, got %f", runoutResult.TotalFHRevenue)
 	}
-	if !almostEqual(result.MgmtFeeRevenue, 720750.7871505547, 0.01) {
-		t.Errorf("Management fee revenue incorrect. Expected 720750.7871505547, got %f", result.MgmtFeeRevenue)
+	if !almostEqual(runoutResult.MgmtFeeRevenue, 720750.7871505547, 0.01) {
+		t.Errorf("Management fee revenue incorrect. Expected 720750.7871505547, got %f", runoutResult.MgmtFeeRevenue)
 	}
-	if !almostEqual(result.AICRevenue, 4805003.2076703645, 0.01) {
-		t.Errorf("AIC revenue incorrect. Expected 4805003.2076703645, got %f", result.AICRevenue)
+	if !almostEqual(runoutResult.AICRevenue, 4805003.2076703645, 0.01) {
+		t.Errorf("AIC revenue incorrect. Expected 4805003.2076703645, got %f", runoutResult.AICRevenue)
 	}
-	if !almostEqual(result.TrustLoadRevenue, 4805004.943710365, 0.01) {
-		t.Errorf("Trust load revenue incorrect. Expected 4805004.943710365, got %f", result.TrustLoadRevenue)
+	if !almostEqual(runoutResult.TrustLoadRevenue, 4805004.943710365, 0.01) {
+		t.Errorf("Trust load revenue incorrect. Expected 4805004.943710365, got %f", runoutResult.TrustLoadRevenue)
 	}
-	if !almostEqual(result.TrustRevenue, -6878044.74086092, 0.01) {
-		t.Errorf("Trust revenue incorrect. Expected -6878044.74086092, got %f", result.TrustRevenue)
+	if !almostEqual(runoutResult.TrustRevenue, -6878044.74086092, 0.01) {
+		t.Errorf("Trust revenue incorrect. Expected -6878044.74086092, got %f", runoutResult.TrustRevenue)
 	}
-	if !almostEqual(result.TotalRevenue, 4805005.2476703655, 0.01) {
-		t.Errorf("Total revenue incorrect. Expected 4805005.2476703655, got %f", result.TotalRevenue)
+	if !almostEqual(runoutResult.TotalRevenue, 4805005.2476703655, 0.01) {
+		t.Errorf("Total revenue incorrect. Expected 4805005.2476703655, got %f", runoutResult.TotalRevenue)
 	}
 
 	// Check Buy-In and Enrollment Fees
-	if !almostEqual(result.BuyIn, params.BuyIn, 0.01) {
-		t.Errorf("Buy-In incorrect. Expected %f, got %f", params.BuyIn, result.BuyIn)
+	if !almostEqual(runoutResult.BuyIn, params.BuyIn, 0.01) {
+		t.Errorf("Buy-In incorrect. Expected %f, got %f", params.BuyIn, runoutResult.BuyIn)
 	}
-	if !almostEqual(result.EnrollmentFees, params.EnrollmentFees, 0.01) {
-		t.Errorf("Enrollment Fees incorrect. Expected %f, got %f", params.EnrollmentFees, result.EnrollmentFees)
+	if !almostEqual(runoutResult.EnrollmentFees, params.EnrollmentFees, 0.01) {
+		t.Errorf("Enrollment Fees incorrect. Expected %f, got %f", params.EnrollmentFees, runoutResult.EnrollmentFees)
 	}
 
 	// Check CumulativeTotalRevenue
-	if !almostEqual(result.CumulativeTotalRevenue, 4805005.2476703655, 0.01) {
-		t.Errorf("Cumulative Total Revenue incorrect. Expected 4805005.2476703655, got %f", result.CumulativeTotalRevenue)
+	if !almostEqual(runoutResult.CumulativeTotalRevenue, 4805005.2476703655, 0.01) {
+		t.Errorf("Cumulative Total Revenue incorrect. Expected 4805005.2476703655, got %f", runoutResult.CumulativeTotalRevenue)
 	}
 }
