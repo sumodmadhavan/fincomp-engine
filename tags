@@ -64,10 +64,11 @@ api	internal/api/handlers_test.go	/^package api$/;"	p
 api	internal/api/server.go	/^package api$/;"	p
 calculateContractPeriods	internal/runout/runout.go	/^func calculateContractPeriods(startDate, endDate time.Time) []ContractPeriod {$/;"	f
 calculateDaysWithinPeriod	internal/runout/runout.go	/^func calculateDaysWithinPeriod(start, end, periodStart, periodEnd time.Time) int {$/;"	f
-calculateEngineRevenue	internal/runout/runout.go	/^func calculateEngineRevenue(period *ContractPeriod, params RunoutParams, engineIndex int) {$/;"	f
-calculatePeriodDetails	internal/runout/runout.go	/^func calculatePeriodDetails(period *ContractPeriod, params RunoutParams, yearNumber int) {$/;"	f
+calculateEngineRevenue	internal/runout/runout.go	/^func calculateEngineRevenue(period *ContractPeriod, params RunoutParams, engineIndex, engineValue int) {$/;"	f
+calculatePeriodDetails	internal/runout/runout.go	/^func calculatePeriodDetails(period *ContractPeriod, params RunoutParams, yearNumber int, rateTrend float64) {$/;"	f
 calculateTotalRevenues	internal/runout/runout.go	/^func calculateTotalRevenues(result *RunoutResult, params RunoutParams) {$/;"	f
 client	client/dotnet/Program.cs	/^    private static readonly HttpClient client = new HttpClient();$/;"	f	class:Program	file:
+engineValues	internal/runout/runout.go	/^var engineValues = []int{1085718, 1085719}$/;"	v
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
 financials	internal/financials/params.go	/^package financials$/;"	p
@@ -79,6 +80,7 @@ main	cmd/server/main.go	/^func main() {$/;"	f
 main	cmd/server/main.go	/^package main$/;"	p
 max	internal/runout/runout.go	/^func max(a, b time.Time) time.Time {$/;"	f
 min	internal/runout/runout.go	/^func min(a, b time.Time) time.Time {$/;"	f
+rateTrendValues	internal/runout/runout.go	/^var rateTrendValues = []float64{$/;"	v
 runout	internal/runout/runout.go	/^package runout$/;"	p
 runout	internal/runout/runout_benchmark_test.go	/^package runout$/;"	p
 runout	internal/runout/runout_params.go	/^package runout$/;"	p
