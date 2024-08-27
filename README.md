@@ -1089,6 +1089,19 @@ func main() {
 	fmt.Printf("Total execution time: %v\n", time.Since(startTime))
 }
 ```
+
+### Why DAG?
+
+- **Flexible DAG structure**: You can easily define complex Directed Acyclic Graph (DAG) structures using the `AddNode` method, allowing for highly customizable workflows.
+  
+- **Node abstraction**: Each node encapsulates its own processing logic, making the DAG more modular and easier to maintain or update individual components without affecting the overall structure.
+
+- **Automatic dependency resolution**: The `Process` method automatically handles the execution order of nodes based on the defined dependencies, ensuring that tasks are completed in the correct sequence.
+
+- **Parallel execution**: Nodes are processed concurrently whenever possible, leading to more efficient execution, especially in large and complex DAGs.
+
+- **Easy to extend**: You can add new node types or modify existing ones without changing the core DAG logic, making the system highly adaptable to new requirements or changes in the workflow.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
