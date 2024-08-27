@@ -891,6 +891,55 @@ Response:
     "BuyIn": 1352291
 }
 ```
+## Future Work
+
+![image](https://github.com/user-attachments/assets/a40b7544-dc16-4437-b9e4-86457cf491a2)
+
+
+# Explanation of the Directed Acyclic Graph (DAG)
+
+This Directed Acyclic Graph (DAG) represents the flow of computations in a runout analytical engine, specifically focusing on the calculation of financial outcomes over multiple periods for engines, such as those used in aircraft maintenance scenarios.
+
+## Breakdown of the DAG
+
+### **Initialization and Setup**
+- **A: Initialize RunoutParams**: This node represents the initialization of parameters required for the runout calculations. These parameters might include input data such as the number of engines, contract terms, rate trends, etc.
+
+### **Period-Based Calculations**
+- **B: Calculate Contract Periods**: This node computes the duration or contract periods over which the runout analysis will be performed. For example, this could involve breaking down the entire contract duration into yearly or monthly periods.
+  
+- **C: Process Each Period**: This node represents the iteration over each period. The calculations done per period are encapsulated in this node.
+
+  - **D: Calculate Period Details**: Within each period, specific details are calculated, which may include costs, usage, and other period-specific metrics. This calculation is influenced by rate trend values, which are external inputs represented by node **J**.
+  
+  - **E: Calculate Engine Revenue for Each Engine**: For each engine, the revenue generated during the period is calculated. This calculation depends on engine-specific values, provided by node **K**. The DAG shows that this step is repeated for each engine within a period.
+  
+  - **E1: Next Engine**: After processing one engine, the system loops back to process the next engine within the same period.
+
+- **C1: Next Period**: After all calculations for the current period are completed (including all engines), the process moves on to the next period.
+
+### **Summation and Accumulation**
+- **F: Sum Engine FH Revenue**: After calculating revenue for each engine in a period, these values are summed to get the total revenue for that period.
+
+### **Overall Calculations**
+- **G: Calculate Total Revenues**: This node sums the revenue across all periods to calculate the total revenue for the entire contract duration.
+  
+- **H: Accumulate Results**: This step aggregates all relevant results, possibly including not just revenues but also costs, profits, and other financial metrics across all periods.
+  
+- **I: Final RunoutResult**: The final node represents the culmination of all calculations into a comprehensive runout result. This result is the output of the entire DAG and might include metrics such as total revenue, cost, profit, and other key financial indicators.
+
+### **External Inputs**
+- **J: Rate Trend Values**: External input node that provides rate trends (e.g., inflation, cost of materials, etc.) that affect period calculations.
+  
+- **K: Engine Values**: External input node that provides specific data for each engine, such as performance metrics or cost parameters.
+
+### **Subgraphs**
+- **Per Period Calculations**: The subgraph encapsulates the detailed calculations that occur within each period, including calculating period details, engine revenue, and summing engine FH revenue.
+  
+- **Overall Calculations**: This subgraph contains the steps that aggregate results across all periods to produce the final runout result.
+
+## Summary
+The DAG is structured to handle complex calculations iteratively over multiple periods and engines. It ensures that all necessary calculations are performed for each period and engine, results are summed and accumulated, and a final comprehensive result is generated. This approach is typical in financial modeling, where multiple variables need to be tracked and computed over time.
 
 ## Contributing
 
