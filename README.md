@@ -938,8 +938,6 @@ This Directed Acyclic Graph (DAG) represents the flow of computations in a runou
 ## Summary
 The DAG is structured to handle complex calculations iteratively over multiple periods and engines. It ensures that all necessary calculations are performed for each period and engine, results are summed and accumulated, and a final comprehensive result is generated. This approach is typical in financial modeling, where multiple variables need to be tracked and computed over time.
 
-![image](https://github.com/user-attachments/assets/a40b7544-dc16-4437-b9e4-86457cf491a2)
-
 ## DAG in Mermaid
 
 ```mermaid
