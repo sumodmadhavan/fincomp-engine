@@ -972,6 +972,123 @@ graph TD
     end
 ```
 
+## Sampling Proof
+
+```mermaid
+graph TD
+    A((A)) --> B((B))
+    A --> C((C))
+    B --> D((D))
+    B --> E((E))
+    C --> F((F))
+    C --> G((G))
+    D --> H((H))
+    E --> H
+    F --> H
+    G --> H
+```
+
+### **Formulating a solution**
+```go
+package main
+
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+// Node represents a node in the DAG
+type Node struct {
+	Name     string
+	Function func([]int) int
+	Parents  []*Node
+	Result   int
+}
+
+// DAG represents the Directed Acyclic Graph
+type DAG struct {
+	Nodes []*Node
+}
+
+// AddNode adds a new node to the DAG
+func (dag *DAG) AddNode(name string, function func([]int) int, parents ...*Node) *Node {
+	node := &Node{
+		Name:     name,
+		Function: function,
+		Parents:  parents,
+	}
+	dag.Nodes = append(dag.Nodes, node)
+	return node
+}
+
+// Process executes the DAG
+func (dag *DAG) Process() {
+	var wg sync.WaitGroup
+	for _, node := range dag.Nodes {
+		wg.Add(1)
+		go dag.processNode(node, &wg)
+	}
+	wg.Wait()
+}
+
+func (dag *DAG) processNode(node *Node, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	// Wait for all parent nodes to complete
+	var parentWg sync.WaitGroup
+	for _, parent := range node.Parents {
+		parentWg.Add(1)
+		go func(p *Node) {
+			defer parentWg.Done()
+			for p.Result == 0 {
+				time.Sleep(time.Millisecond)
+			}
+		}(parent)
+	}
+	parentWg.Wait()
+
+	// Collect parent results
+	parentResults := make([]int, len(node.Parents))
+	for i, parent := range node.Parents {
+		parentResults[i] = parent.Result
+	}
+
+	// Execute node function
+	node.Result = node.Function(parentResults)
+	fmt.Printf("%s: %d\n", node.Name, node.Result)
+}
+
+func main() {
+	dag := &DAG{}
+
+	// Define node functions
+	rootFunc := func([]int) int { return 1 }
+	doubleFunc := func(inputs []int) int { return inputs[0] * 2 }
+	averageFunc := func(inputs []int) int {
+		sum := 0
+		for _, v := range inputs {
+			sum += v
+		}
+		return sum / len(inputs)
+	}
+
+	// Create DAG structure
+	A := dag.AddNode("A", rootFunc)
+	B := dag.AddNode("B", doubleFunc, A)
+	C := dag.AddNode("C", doubleFunc, A)
+	D := dag.AddNode("D", doubleFunc, B)
+	E := dag.AddNode("E", doubleFunc, B)
+	F := dag.AddNode("F", doubleFunc, C)
+	G := dag.AddNode("G", doubleFunc, C)
+	dag.AddNode("H", averageFunc, D, E, F, G)
+
+	// Process the DAG
+	startTime := time.Now()
+	dag.Process()
+	fmt.Printf("Total execution time: %v\n", time.Since(startTime))
+}
+```
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
