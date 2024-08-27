@@ -891,12 +891,9 @@ Response:
     "BuyIn": 1352291
 }
 ```
-## Future Work
+# Runout Analytical Engine - Future Scope
 
-![image](https://github.com/user-attachments/assets/a40b7544-dc16-4437-b9e4-86457cf491a2)
-
-
-# Explanation of the Directed Acyclic Graph (DAG)
+## Explanation of the Directed Acyclic Graph (DAG)
 
 This Directed Acyclic Graph (DAG) represents the flow of computations in a runout analytical engine, specifically focusing on the calculation of financial outcomes over multiple periods for engines, such as those used in aircraft maintenance scenarios.
 
@@ -940,6 +937,42 @@ This Directed Acyclic Graph (DAG) represents the flow of computations in a runou
 
 ## Summary
 The DAG is structured to handle complex calculations iteratively over multiple periods and engines. It ensures that all necessary calculations are performed for each period and engine, results are summed and accumulated, and a final comprehensive result is generated. This approach is typical in financial modeling, where multiple variables need to be tracked and computed over time.
+
+![image](https://github.com/user-attachments/assets/a40b7544-dc16-4437-b9e4-86457cf491a2)
+
+## DAG in Mermaid
+
+```mermaid
+graph TD
+    A[Initialize RunoutParams] --> B[Calculate Contract Periods]
+    B --> C[Process Each Period]
+    C --> D[Calculate Period Details]
+    D --> E[Calculate Engine Revenue for Each Engine]
+    E --> F[Sum Engine FH Revenue]
+    F --> G[Calculate Total Revenues]
+    G --> H[Accumulate Results]
+    H --> I[Final RunoutResult]
+
+    C --> C1[Next Period]
+    C1 --> C
+
+    E --> E1[Next Engine]
+    E1 --> E
+
+    J[Rate Trend Values] --> D
+    K[Engine Values] --> E
+
+    subgraph "Per Period Calculations"
+        D
+        E
+        F
+    end
+
+    subgraph "Overall Calculations"
+        G
+        H
+    end
+```
 
 ## Contributing
 
