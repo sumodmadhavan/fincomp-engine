@@ -1102,6 +1102,158 @@ func main() {
 
 - **Easy to extend**: You can add new node types or modify existing ones without changing the core DAG logic, making the system highly adaptable to new requirements or changes in the workflow.
 
+### Another attempt to simplify
+```go
+package main
+
+import (
+    "fmt"
+    "sync"
+    "time"
+)
+
+// Node represents a node in the DAG
+type Node struct {
+    Name     string
+    Function func([]int) int
+    Parents  []*Node
+    Result   int
+}
+
+// DAG represents the Directed Acyclic Graph
+type DAG struct {
+    Nodes []*Node
+}
+
+// AddNode adds a new node to the DAG
+func (dag *DAG) AddNode(name string, function func([]int) int, parents ...*Node) *Node {
+    node := &Node{
+        Name:     name,
+        Function: function,
+        Parents:  parents,
+    }
+    dag.Nodes = append(dag.Nodes, node)
+    return node
+}
+
+// Process executes the DAG
+func (dag *DAG) Process() {
+    var wg sync.WaitGroup
+    for _, node := range dag.Nodes {
+        wg.Add(1)
+        go dag.processNode(node, &wg)
+    }
+    wg.Wait()
+}
+
+func (dag *DAG) processNode(node *Node, wg *sync.WaitGroup) {
+    defer wg.Done()
+
+    // Wait for all parent nodes to complete
+    var parentWg sync.WaitGroup
+    for _, parent := range node.Parents {
+        parentWg.Add(1)
+        go func(p *Node) {
+            defer parentWg.Done()
+            for p.Result == 0 {
+                time.Sleep(time.Millisecond)
+            }
+        }(parent)
+    }
+    parentWg.Wait()
+
+    // Collect parent results
+    parentResults := make([]int, len(node.Parents))
+    for i, parent := range node.Parents {
+        parentResults[i] = parent.Result
+    }
+
+    // Execute node function
+    node.Result = node.Function(parentResults)
+    fmt.Printf("%s: %d\n", node.Name, node.Result)
+}
+
+func main() {
+    dag := &DAG{}
+
+    // Define our functions
+    addFunc := func(inputs []int) int {
+        return inputs[0] + inputs[1]
+    }
+    
+    multiplyFunc := func(inputs []int) int {
+        return inputs[0] * inputs[1]
+    }
+
+    // Create our DAG structure
+    A := dag.AddNode("A", func([]int) int { return 5 })  // Constant node
+    B := dag.AddNode("B", func([]int) int { return 3 })  // Constant node
+    C := dag.AddNode("C", addFunc, A, B)                 // C = A + B
+    D := dag.AddNode("D", multiplyFunc, A, B)            // D = A * B
+    dag.AddNode("E", addFunc, C, D)                      // E = C + D
+
+    // Process the DAG
+    startTime := time.Now()
+    dag.Process()
+    fmt.Printf("Total execution time: %v\n", time.Since(startTime))
+}
+```
+# DAG Example
+
+This example demonstrates the creation and processing of a Directed Acyclic Graph (DAG) with nodes that perform simple mathematical operations. The DAG is processed with automatic dependency resolution and parallel execution where possible.
+
+## Functions Overview
+
+- **`addFunc`**: A function that takes a slice of integers as input and returns the sum of those integers.
+- **`multiplyFunc`**: A function that takes a slice of integers as input and returns the product of those integers.
+
+## Main DAG Example
+
+1. **Create the DAG**: 
+   - A new DAG is created with `dag := &DAG{}`.
+
+2. **Add Nodes to the DAG**:
+   - **Node A**: Returns a constant value `5`.
+   - **Node B**: Returns a constant value `3`.
+   - **Node C**: Adds the results of Node A and Node B using `addFunc`.
+   - **Node D**: Multiplies the results of Node A and Node B using `multiplyFunc`.
+   - **Node E**: Adds the results of Node C and Node D using `addFunc`.
+
+3. **DAG Structure**:
+   The DAG structure for this example is visualized as:
+```mermaid
+graph TD
+    A((A)) --> C((C))
+    B((B)) --> C
+    A --> D((D))
+    B --> D
+    C --> E((E))
+    D --> E
+```
+
+4. **Processing the DAG**:
+- When `dag.Process()` is called, the DAG is processed in parallel where possible:
+  - **Node A** and **Node B** can be processed immediately because they have no dependencies.
+  - **Node C** and **Node D** wait for the results from **Node A** and **Node B** to complete, then process in parallel.
+  - **Node E** waits for **Node C** and **Node D** to complete, then processes its function.
+
+## `processNode` Function Overview
+
+- **Waits for Parent Nodes**: The function waits for all parent nodes (dependencies) to complete before processing the current node.
+- **Collects Parent Results**: It collects the results from all parent nodes as input for the current node's function.
+- **Executes Node's Function**: The node's function is executed with the collected parent results as its input.
+- **Prints the Result**: After execution, the result of the node's function is printed.
+
+## Advantages of this Approach
+
+- **Flexible DAG Structure**: Easily define complex DAG structures using the `AddNode` method.
+- **Node Abstraction**: Each node encapsulates its own processing logic, promoting modularity.
+- **Automatic Dependency Resolution**: The `Process` method handles the execution order based on dependencies.
+- **Parallel Execution**: Nodes are processed concurrently when possible, optimizing performance.
+- **Ease of Extension**: New node types or modifications can be made without changing the core DAG logic.
+
+This example provides a clear illustration of how to build and execute a DAG in a concurrent and dependency-resolved manner, which can be highly beneficial in various computational workflows.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
