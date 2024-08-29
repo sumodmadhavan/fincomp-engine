@@ -77,11 +77,20 @@ calculateEngineRevenue	internal/runout/runout.go	/^func calculateEngineRevenue(p
 calculatePeriodDetails	internal/runout/runout.go	/^func calculatePeriodDetails(period *ContractPeriod, params RunoutParams, yearNumber int, rateTrend float64) {$/;"	f
 calculateTotalRevenues	internal/runout/runout.go	/^func calculateTotalRevenues(result *RunoutResult, params RunoutParams) {$/;"	f
 client	client/dotnet/Program.cs	/^    private static readonly HttpClient client = new HttpClient();$/;"	f	class:Program	file:
+columns	migration/ruby.py	/^        columns=["MMCContractStartDate", "MMCContractEndDate", "NumOfDays"],$/;"	v
+contract_end_date	migration/ruby.py	/^    contract_end_date = datetime.fromisoformat($/;"	v
+contract_periods	migration/ruby.py	/^    contract_periods = calculate_contract_periods($/;"	v
+contract_start_date	migration/ruby.py	/^    contract_start_date = datetime.fromisoformat($/;"	v
+df_mmc_contract_dates	migration/ruby.py	/^    df_mmc_contract_dates = pd.DataFrame($/;"	v
 engineValues	internal/runout/runout.go	/^var engineValues = []int{1085718, 1085719}$/;"	v
+engine_values	migration/ruby.py	/^engine_values = [1085718, 1085719]$/;"	v
+fh_revenue_columns	migration/ruby.py	/^    fh_revenue_columns = [$/;"	v
 financials	internal/financials/calculations.go	/^package financials$/;"	p
 financials	internal/financials/calculations_test.go	/^package financials$/;"	p
 financials	internal/financials/compute_engine.go	/^package financials$/;"	p
 financials	internal/financials/params.go	/^package financials$/;"	p
+first_run_rate	migration/ruby.py	/^first_run_rate = 255.13$/;"	v
+first_run_rate_switch_date	migration/ruby.py	/^        first_run_rate_switch_date = datetime.strptime(f"05\/30\/2026", "%m\/%d\/%Y")$/;"	v
 getTestParams	internal/runout/runout_benchmark_test.go	/^func getTestParams() RunoutParams {$/;"	f
 goalseek	internal/goalseek/goalseek.go	/^package goalseek$/;"	p
 goalseek	internal/goalseek/goalseek_benchmark_test.go	/^package goalseek$/;"	p
@@ -90,12 +99,22 @@ main	cmd/server/main.go	/^func main() {$/;"	f
 main	cmd/server/main.go	/^package main$/;"	p
 max	internal/runout/runout.go	/^func max(a, b time.Time) time.Time {$/;"	f
 min	internal/runout/runout.go	/^func min(a, b time.Time) time.Time {$/;"	f
+params	migration/ruby.py	/^    params = {$/;"	v
+process_runout	migration/ruby.py	/^def process_runout($/;"	f
 rateTrendValues	internal/runout/runout.go	/^var rateTrendValues = []float64{$/;"	v
+rate_trend_values	migration/ruby.py	/^rate_trend_values = [$/;"	v
+result	migration/ruby.py	/^result = process_runout($/;"	v
 runCalculation	internal/runout/runout_benchmark_test.go	/^func runCalculation(b *testing.B, params RunoutParams) {$/;"	f
 runout	internal/runout/runout.go	/^package runout$/;"	p
 runout	internal/runout/runout_benchmark_test.go	/^package runout$/;"	p
 runout	internal/runout/runout_params.go	/^package runout$/;"	p
 runout	internal/runout/runout_test.go	/^package runout$/;"	p
+second_run_rate	migration/ruby.py	/^second_run_rate = 255.13$/;"	v
+second_run_rate_switch_date	migration/ruby.py	/^        second_run_rate_switch_date = datetime.strptime(f"05\/30\/2028", "%m\/%d\/%Y")$/;"	v
 setupRoutes	internal/api/server.go	/^func (s *Server) setupRoutes() {$/;"	f
 sumEngineFHRevenue	internal/runout/runout.go	/^func sumEngineFHRevenue(engines []EngineData) float64 {$/;"	f
 testutils	pkg/testutils/testutils.go	/^package testutils$/;"	p
+third_run_rate	migration/ruby.py	/^third_run_rate = 255.13$/;"	v
+third_run_rate_switch_date	migration/ruby.py	/^        third_run_rate_switch_date = datetime.strptime(f"09\/27\/2046", "%m\/%d\/%Y")$/;"	v
+warranty_date	migration/ruby.py	/^        warranty_date = datetime.strptime(f"08\/26\/2024", "%m\/%d\/%Y")$/;"	v
+warranty_rate	migration/ruby.py	/^warranty_rate = 243.6$/;"	v
