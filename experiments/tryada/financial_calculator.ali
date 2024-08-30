@@ -1,0 +1,172 @@
+V "GNAT Lib v10"
+M P W=b
+P SS ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U financial_calculator%b  financial_calculator.adb  de99f4e6 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.generic_elementary_functions%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-calfor.ads		20230707070819 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20230707070819 409d7e5b ada.calendar.time_zones%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-numaux.ads		20230707070819 243fe0b7 ada.numerics.aux%s
+D a-ngelfu.ads		20230707070819 55716239 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20230707070819 a9022048 ada.numerics.generic_elementary_functions%b
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D financial_calculator.adb  20240822042919 2ea468db financial_calculator%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20230707070819 0b705ca5 system.concat_3%s
+D s-conca6.ads		20230707070819 d2c72db2 system.concat_6%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-exnllf.ads		20230707070819 bc7ebbdc system.exn_llf%s
+D s-fatflt.ads		20230707070819 11beb392 system.fat_flt%s
+D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20230707070819 c7a851e2 system.img_real%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [financial_calculator standard 8 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r32 2r6 2r32 3r6 4r6 4r32 5r6 5r35 6r6 6r32 10r35
+X 2 a-calend.ads
+36K13*Calendar 409e17 17|4w10 4r36 5r10 5r39
+42I9*Time<222I9> 17|119r30
+56V13*Clock{42I9} 17|123s21 157s19
+112V14*"-"{duration} 17|158s32
+222I9 Time_Rep<long_long_integer>
+X 3 a-calfor.ads
+24K22*Formatting 215e28 17|5w19 5r48
+X 5 a-except.ads
+48K13*Exceptions 335e19 17|6w10 6r36
+98V13*Exception_Information{string} 17|165s47
+X 6 a-flteio.ads
+20K13*Float_Text_IO[15|46] 17|2w10 2r36
+X 8 a-numeri.ads
+16K13*Numerics 32e17 17|3r10 10r39
+X 10 a-ngelfu.ads
+39k22*Generic_Elementary_Functions 205e46 17|3w19 10r48
+86V14 "**"{float} 17|36s73[10]
+X 14 a-textio.ads
+57K13*Text_IO 727e16 17|1w10 1r36
+86I12*Field{integer}
+264U14*New_Line 17|128s7 131s7 150s7 155s7
+465U14*Put 17|126s7 129s7 146s7 148s7 153s7 160s7
+508U14*Put_Line 17|83s10 86s13 139s10 140s10 162s7 165s26
+X 15 a-tiflio.ads
+82U14*Put 17|127s7[6|20] 130s7[6|20] 147s7[6|20] 149s7[6|20] 154s7[6|20]
+. 161s7[6|20]
+84i7 Fore{14|86I12} 17|127r25[6|20] 130r38[6|20] 147r26[6|20] 149r25[6|20]
+. 154r36[6|20] 161r32[6|20]
+85i7 Aft{14|86I12} 17|127r36[6|20] 130r49[6|20] 147r37[6|20] 149r36[6|20]
+. 154r47[6|20] 161r43[6|20]
+86i7 Exp{14|86I12} 17|127r46[6|20] 130r59[6|20] 147r47[6|20] 149r46[6|20]
+. 154r57[6|20] 161r53[6|20]
+X 17 financial_calculator.adb
+8U11*Financial_Calculator 8b11 167l5 167t25
+10K12 Float_Functions[10|39] 11r8
+13R9 Financial_Params 23e14 25r58 59r56 67r40 104r16
+14i7 Num_Years{integer} 34r31 105m10
+15f7 Au_Hours{float} 35r45 38r35 41r70 47r75 106m10
+16f7 Initial_TSN{float} 35r24 107m10
+17f7 Rate_Escalation{float} 36r49 108m10
+18f7 AIC{float} 39r58 109m10
+19f7 HSI_TSN{float} 41r27 41r88 110m10
+20f7 Overhaul_TSN{float} 47r27 47r93 111m10
+21f7 HSI_Cost{float} 42r32 112m10
+22f7 Overhaul_Cost{float} 48r37 113m10
+25V13 Calculate_Financials{float} 25b13 25>35 25>49 57l8 57t28 61s14 125s36
+. 152s34
+25f35 Rate{float} 36r28
+25r49 Params{13R9} 34r24 35r17 35r38 36r42 38r28 39r51 41r20 41r63 41r81
+. 42r25 47r20 47r68 47r86 48r30
+26f7 Cumulative_Profit{float} 53m10 53r31 56r14
+27f7 TSN{float} 35m10 41r13 41r57 47r13 47r62
+28f7 Escalated_Rate{float} 36m10 38r46
+29f7 Engine_Revenue{float} 38m10 39r27
+30f7 Total_Revenue{float} 39m10 53r51
+31f7 HSI_Cost{float} 42m13 44m13 53r68
+32f7 Overhaul_Cost{float} 48m13 50m13 53r79
+34i11 Year{integer} 35r62 36r81 41r45 47r50
+59V13 Objective_Function{float} 59b13 59>33 59>47 59>74 62l8 62t26 72s13
+. 73s13 81s16 138s10 138s67
+59f33 Rate{float} 61r35
+59r47 Params{13R9} 61r41
+59f74 Target_Profit{float} 61r51
+64V13 Bisection_Method{float} 64b13 64=31 64=34 65>31 66>31 67>31 68>31 100l8
+. 100t24 144s23
+64f31 A{float} 72r32 80r16 94m13
+64f34 B{float} 73r32 80r20 91m13
+65f31 Tol{float} 85r23
+66i31 Max_Iter{integer} 79r21 99r94
+67r31 Params{13R9} 72r35 73r35 81r38
+68f31 Target_Profit{float} 72r43 73r43 81r46
+70f7 FA{float} 72m7 75r10 90r13 95m13
+70f11 FB{float} 73m7 75r15 92m13
+70f15 FC{float} 81m10 83r120 85r17 90r18 92r19 95r19
+70f19 C{float} 80m10 81r35 83r77 87r20 91r18 94r18
+79i11 I{integer} 83r47
+104r7 Params{13R9} 125r71 138r42 138r99 144r79 152r69
+115f7 Initial_Rate{float} 125r57 127r11
+116f7 Target_Profit{float} 138r50 138r107 144r87 147r11
+117f7 Optimal_Rate{float} 144m7 149r11 152r55
+118f7 Initial_Cumulative_Profit{float} 125m7 130r11
+118f34 Final_Cumulative_Profit{float} 152m7 154r11
+119i7 Start_Time{2|42I9} 123m7 158r34
+119i19 End_Time{2|42I9} 157m7 158r23
+120o7 Elapsed_Time{duration} 158m7 161r17
+121f7 Lower_Bound{float} 134m7 138r29 144m40 144r40
+121f20 Upper_Bound{float} 135m7 138r86 144m53 144r53
+165r12 E{5|57R9} 165r69
+

@@ -1,0 +1,1 @@
+fn(Json<GoalSeekRequest>, Data<Arc<{type error}, {type error}>>) -> impl std::future::Future<Output = impl Responder> {goal_seek_handler}

@@ -1,0 +1,183 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+with Ada.Calendar; use Ada.Calendar;
+with Ada.Numerics.Generic_Elementary_Functions;
+
+procedure Financial_Calculator is
+
+   type Financial_Params is record
+      Num_Years       : Natural;
+      Au_Hours        : Float;
+      Initial_TSN     : Float;
+      Rate_Escalation : Float;
+      AIC             : Float;
+      HSI_TSN         : Float;
+      Overhaul_TSN    : Float;
+      HSI_Cost        : Float;
+      Overhaul_Cost   : Float;
+   end record;
+
+   package Float_Functions is new Ada.Numerics.Generic_Elementary_Functions(Float);
+   use Float_Functions;
+
+   function Validate(Params : Financial_Params) return Boolean is
+   begin
+      if Params.Num_Years <= 0 then
+         return False;
+      end if;
+      if Params.Au_Hours <= 0.0 then
+         return False;
+      end if;
+      if Params.Initial_TSN < 0.0 then
+         return False;
+      end if;
+      if Params.Rate_Escalation < 0.0 then
+         return False;
+      end if;
+      if Params.AIC < 0.0 or Params.AIC > 100.0 then
+         return False;
+      end if;
+      if Params.HSI_TSN <= 0.0 then
+         return False;
+      end if;
+      if Params.Overhaul_TSN <= 0.0 then
+         return False;
+      end if;
+      if Params.HSI_Cost < 0.0 then
+         return False;
+      end if;
+      if Params.Overhaul_Cost < 0.0 then
+         return False;
+      end if;
+      return True;
+   end Validate;
+
+   function Calculate_Financials(Rate : Float; Params : Financial_Params) return Float is
+      Cumulative_Profit : Float := 0.0;
+   begin
+      for Year in 1 .. Params.Num_Years loop
+         declare
+            TSN : Float := Params.Initial_TSN + Params.Au_Hours * Float(Year);
+            Escalated_Rate : Float := Rate * Power(1.0 + Params.Rate_Escalation / 100.0, Float(Year - 1));
+            Engine_Revenue : Float := Params.Au_Hours * Escalated_Rate;
+            AIC_Revenue : Float := Engine_Revenue * Params.AIC / 100.0;
+            Total_Revenue : Float := Engine_Revenue + AIC_Revenue;
+            HSI : Boolean := TSN >= Params.HSI_TSN and (Year = 1 or TSN - Params.Au_Hours < Params.HSI_TSN);
+            Overhaul : Boolean := TSN >= Params.Overhaul_TSN and (Year = 1 or TSN - Params.Au_Hours < Params.Overhaul_TSN);
+            HSI_Cost : Float := (if HSI then Params.HSI_Cost else 0.0);
+            Overhaul_Cost : Float := (if Overhaul then Params.Overhaul_Cost else 0.0);
+            Total_Cost : Float := HSI_Cost + Overhaul_Cost;
+            Total_Profit : Float := Total_Revenue - Total_Cost;
+         begin
+            Cumulative_Profit := Cumulative_Profit + Total_Profit;
+         end;
+      end loop;
+      return Cumulative_Profit;
+   end Calculate_Financials;
+
+   function Newton_Raphson(F, DF : access function(X : Float) return Float;
+                           X0, Xtol : Float;
+                           Max_Iter : Natural) return Float is
+      X : Float := X0;
+      Iter : Natural := 0;
+   begin
+      while Iter < Max_Iter loop
+         declare
+            FX : Float := F(X);
+         begin
+            if abs FX < Xtol then
+               return X;
+            end if;
+            declare
+               DFX : Float := DF(X);
+            begin
+               if DFX = 0.0 then
+                  raise Constraint_Error with "Derivative is zero, can't proceed with Newton-Raphson";
+               end if;
+               X := X - FX / DFX;
+            end;
+         end;
+         Iter := Iter + 1;
+      end loop;
+      raise Constraint_Error with "Newton-Raphson method did not converge within " & Integer'Image(Max_Iter) & " iterations";
+   end Newton_Raphson;
+
+   function Goal_Seek(Target_Profit : Float; Params : Financial_Params; Initial_Guess : Float) return Float is
+      function Objective(Rate : Float) return Float is
+         Profit : Float := Calculate_Financials(Rate, Params);
+      begin
+         return Profit - Target_Profit;
+      end Objective;
+
+      function Derivative(Rate : Float) return Float is
+         Epsilon : constant Float := 1.0e-6;
+      begin
+         return (Objective(Rate + Epsilon) - Objective(Rate)) / Epsilon;
+      end Derivative;
+
+   begin
+      return Newton_Raphson(Objective'Access, Derivative'Access, Initial_Guess, 1.0e-8, 100);
+   end Goal_Seek;
+
+   Params : Financial_Params := (
+      Num_Years       => 10,
+      Au_Hours        => 450.0,
+      Initial_TSN     => 100.0,
+      Rate_Escalation => 5.0,
+      AIC             => 10.0,
+      HSI_TSN         => 1000.0,
+      Overhaul_TSN    => 3000.0,
+      HSI_Cost        => 50000.0,
+      Overhaul_Cost   => 100000.0
+   );
+
+   Initial_Rate : Float := 100.0;
+   Target_Profit : Float := 3_000_000.0;
+
+   Start_Time : Time := Clock;
+
+begin
+   if not Validate(Params) then
+      Put_Line("Invalid parameters");
+      return;
+   end if;
+
+   declare
+      Initial_Cumulative_Profit : Float := Calculate_Financials(Initial_Rate, Params);
+   begin
+      Put("Initial Warranty Rate: ");
+      Put(Item => Initial_Rate, Fore => 2, Aft => 2, Exp => 0);
+      New_Line;
+      Put("Initial Cumulative Profit: ");
+      Put(Item => Initial_Cumulative_Profit, Fore => 2, Aft => 2, Exp => 0);
+      New_Line;
+   end;
+
+   declare
+      Optimal_Rate : Float := Goal_Seek(Target_Profit, Params, Initial_Rate);
+   begin
+      Put("Optimal Warranty Rate to achieve ");
+      Put(Item => Target_Profit, Fore => 2, Aft => 2, Exp => 0);
+      Put_Line(" profit: ");
+      Put(Item => Optimal_Rate, Fore => 2, Aft => 7, Exp => 0);
+      New_Line;
+   end;
+
+   declare
+      Final_Cumulative_Profit : Float := Calculate_Financials(Optimal_Rate, Params);
+   begin
+      Put("Final Cumulative Profit: ");
+      Put(Item => Final_Cumulative_Profit, Fore => 2, Aft => 2, Exp => 0);
+      New_Line;
+   end;
+
+   declare
+      End_Time : Time := Clock;
+      Elapsed_Time : Duration := End_Time - Start_Time;
+   begin
+      Put("Execution time: ");
+      Put(Duration'Image(Elapsed_Time));
+      New_Line;
+   end;
+
+end Financial_Calculator;

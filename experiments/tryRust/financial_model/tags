@@ -1,0 +1,748 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ZDICTLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	43;"	d
+ZDICTLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	45;"	d
+ZDICTLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	47;"	d
+ZDICTLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	43;"	d
+ZDICTLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	45;"	d
+ZDICTLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	47;"	d
+ZDICTLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	36;"	d
+ZDICTLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	38;"	d
+ZDICTLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	36;"	d
+ZDICTLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	38;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	282;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	284;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	286;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	282;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	284;"	d
+ZDICTLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	286;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	26;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	28;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	30;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	26;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	28;"	d
+ZDICTLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	30;"	d
+ZDICT_CONTENTSIZE_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	299;"	d
+ZDICT_CONTENTSIZE_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	299;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	447;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	451;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	453;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	455;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	457;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	460;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	447;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	451;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	453;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	455;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	457;"	d
+ZDICT_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	460;"	d
+ZDICT_DICTSIZE_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	297;"	d
+ZDICT_DICTSIZE_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	297;"	d
+ZDICT_GCC_VERSION	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	449;"	d
+ZDICT_GCC_VERSION	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	449;"	d
+ZDICT_cover_params_t	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^} ZDICT_cover_params_t;$/;"	t	typeref:struct:__anon56
+ZDICT_cover_params_t	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^} ZDICT_cover_params_t;$/;"	t	typeref:struct:__anon27
+ZDICT_fastCover_params_t	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^} ZDICT_fastCover_params_t;$/;"	t	typeref:struct:__anon57
+ZDICT_fastCover_params_t	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^} ZDICT_fastCover_params_t;$/;"	t	typeref:struct:__anon28
+ZDICT_legacy_params_t	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^} ZDICT_legacy_params_t;$/;"	t	typeref:struct:__anon58
+ZDICT_legacy_params_t	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^} ZDICT_legacy_params_t;$/;"	t	typeref:struct:__anon29
+ZDICT_params_t	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^} ZDICT_params_t;$/;"	t	typeref:struct:__anon55
+ZDICT_params_t	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^} ZDICT_params_t;$/;"	t	typeref:struct:__anon26
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	43;"	d
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	45;"	d
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	47;"	d
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	43;"	d
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	45;"	d
+ZSTDERRORLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	47;"	d
+ZSTDERRORLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	36;"	d
+ZSTDERRORLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	38;"	d
+ZSTDERRORLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	36;"	d
+ZSTDERRORLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	38;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	26;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	28;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	30;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	26;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	28;"	d
+ZSTDERRORLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	30;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	43;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	45;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	47;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	43;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	45;"	d
+ZSTDLIB_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	47;"	d
+ZSTDLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	36;"	d
+ZSTDLIB_HIDDEN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	38;"	d
+ZSTDLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	36;"	d
+ZSTDLIB_HIDDEN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	38;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1202;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1204;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1206;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1202;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1204;"	d
+ZSTDLIB_STATIC_API	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1206;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	26;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	28;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	30;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	26;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	28;"	d
+ZSTDLIB_VISIBLE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	30;"	d
+ZSTD_BLOCKSIZELOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	142;"	d
+ZSTD_BLOCKSIZELOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	142;"	d
+ZSTD_BLOCKSIZE_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	143;"	d
+ZSTD_BLOCKSIZE_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	143;"	d
+ZSTD_BLOCKSIZE_MAX_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1244;"	d
+ZSTD_BLOCKSIZE_MAX_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1244;"	d
+ZSTD_CCtx	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_CCtx_s ZSTD_CCtx;$/;"	t	typeref:struct:ZSTD_CCtx_s
+ZSTD_CCtx	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_CCtx_s ZSTD_CCtx;$/;"	t	typeref:struct:ZSTD_CCtx_s
+ZSTD_CCtx_params	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_CCtx_params_s ZSTD_CCtx_params;$/;"	t	typeref:struct:ZSTD_CCtx_params_s
+ZSTD_CCtx_params	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_CCtx_params_s ZSTD_CCtx_params;$/;"	t	typeref:struct:ZSTD_CCtx_params_s
+ZSTD_CDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_CDict_s ZSTD_CDict;$/;"	t	typeref:struct:ZSTD_CDict_s
+ZSTD_CDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_CDict_s ZSTD_CDict;$/;"	t	typeref:struct:ZSTD_CDict_s
+ZSTD_CHAINLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1234;"	d
+ZSTD_CHAINLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1234;"	d
+ZSTD_CHAINLOG_MAX_32	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1232;"	d
+ZSTD_CHAINLOG_MAX_32	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1232;"	d
+ZSTD_CHAINLOG_MAX_64	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1233;"	d
+ZSTD_CHAINLOG_MAX_64	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1233;"	d
+ZSTD_CHAINLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1235;"	d
+ZSTD_CHAINLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1235;"	d
+ZSTD_CLEVEL_DEFAULT	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	129;"	d
+ZSTD_CLEVEL_DEFAULT	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	129;"	d
+ZSTD_COMPRESSBOUND	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	232;"	d
+ZSTD_COMPRESSBOUND	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	232;"	d
+ZSTD_CONTENTSIZE_ERROR	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	192;"	d
+ZSTD_CONTENTSIZE_ERROR	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	192;"	d
+ZSTD_CONTENTSIZE_UNKNOWN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	191;"	d
+ZSTD_CONTENTSIZE_UNKNOWN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	191;"	d
+ZSTD_CStream	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef ZSTD_CCtx ZSTD_CStream;  \/**< CCtx and CStream are now effectively same object (>= v1.3.0) *\/$/;"	t
+ZSTD_CStream	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef ZSTD_CCtx ZSTD_CStream;  \/**< CCtx and CStream are now effectively same object (>= v1.3.0) *\/$/;"	t
+ZSTD_DCtx	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_DCtx_s ZSTD_DCtx;$/;"	t	typeref:struct:ZSTD_DCtx_s
+ZSTD_DCtx	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_DCtx_s ZSTD_DCtx;$/;"	t	typeref:struct:ZSTD_DCtx_s
+ZSTD_DDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_DDict_s ZSTD_DDict;$/;"	t	typeref:struct:ZSTD_DDict_s
+ZSTD_DDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_DDict_s ZSTD_DDict;$/;"	t	typeref:struct:ZSTD_DDict_s
+ZSTD_DECOMPRESSION_MARGIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1534;"	d
+ZSTD_DECOMPRESSION_MARGIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1534;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	56;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	59;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	61;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	63;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	65;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	68;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	56;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	59;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	61;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	63;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	65;"	d
+ZSTD_DEPRECATED	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	68;"	d
+ZSTD_DStream	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef ZSTD_DCtx ZSTD_DStream;  \/**< DCtx and DStream are now effectively same object (>= v1.3.0) *\/$/;"	t
+ZSTD_DStream	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef ZSTD_DCtx ZSTD_DStream;  \/**< DCtx and DStream are now effectively same object (>= v1.3.0) *\/$/;"	t
+ZSTD_ERRORS_H_398273423	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	12;"	d
+ZSTD_ERRORS_H_398273423	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	12;"	d
+ZSTD_EXPAND_AND_QUOTE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	118;"	d
+ZSTD_EXPAND_AND_QUOTE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	118;"	d
+ZSTD_EndDirective	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_EndDirective;$/;"	t	typeref:enum:__anon35
+ZSTD_EndDirective	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_EndDirective;$/;"	t	typeref:enum:__anon6
+ZSTD_ErrorCode	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^} ZSTD_ErrorCode;$/;"	t	typeref:enum:__anon54
+ZSTD_ErrorCode	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^} ZSTD_ErrorCode;$/;"	t	typeref:enum:__anon25
+ZSTD_FRAMEHEADERSIZE_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1222;"	d
+ZSTD_FRAMEHEADERSIZE_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1222;"	d
+ZSTD_FRAMEHEADERSIZE_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1221;"	d
+ZSTD_FRAMEHEADERSIZE_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1221;"	d
+ZSTD_FRAMEHEADERSIZE_PREFIX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1220;"	d
+ZSTD_FRAMEHEADERSIZE_PREFIX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1220;"	d
+ZSTD_HASHLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1230;"	d
+ZSTD_HASHLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1230;"	d
+ZSTD_HASHLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1231;"	d
+ZSTD_HASHLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1231;"	d
+ZSTD_H_235446	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	15;"	d
+ZSTD_H_235446	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	15;"	d
+ZSTD_H_ZSTD_STATIC_LINKING_ONLY	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1197;"	d
+ZSTD_H_ZSTD_STATIC_LINKING_ONLY	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1197;"	d
+ZSTD_LDM_BUCKETSIZELOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1263;"	d
+ZSTD_LDM_BUCKETSIZELOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1263;"	d
+ZSTD_LDM_BUCKETSIZELOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1262;"	d
+ZSTD_LDM_BUCKETSIZELOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1262;"	d
+ZSTD_LDM_HASHLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1259;"	d
+ZSTD_LDM_HASHLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1259;"	d
+ZSTD_LDM_HASHLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1258;"	d
+ZSTD_LDM_HASHLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1258;"	d
+ZSTD_LDM_HASHRATELOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1265;"	d
+ZSTD_LDM_HASHRATELOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1265;"	d
+ZSTD_LDM_HASHRATELOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1264;"	d
+ZSTD_LDM_HASHRATELOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1264;"	d
+ZSTD_LDM_MINMATCH_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1261;"	d
+ZSTD_LDM_MINMATCH_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1261;"	d
+ZSTD_LDM_MINMATCH_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1260;"	d
+ZSTD_LDM_MINMATCH_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1260;"	d
+ZSTD_LIB_VERSION	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	116;"	d
+ZSTD_LIB_VERSION	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	116;"	d
+ZSTD_MAGICNUMBER	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	137;"	d
+ZSTD_MAGICNUMBER	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	137;"	d
+ZSTD_MAGIC_DICTIONARY	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	138;"	d
+ZSTD_MAGIC_DICTIONARY	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	138;"	d
+ZSTD_MAGIC_SKIPPABLE_MASK	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	140;"	d
+ZSTD_MAGIC_SKIPPABLE_MASK	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	140;"	d
+ZSTD_MAGIC_SKIPPABLE_START	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	139;"	d
+ZSTD_MAGIC_SKIPPABLE_START	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	139;"	d
+ZSTD_MAX_INPUT_SIZE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	231;"	d
+ZSTD_MAX_INPUT_SIZE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	231;"	d
+ZSTD_MINMATCH_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1238;"	d
+ZSTD_MINMATCH_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1238;"	d
+ZSTD_MINMATCH_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1239;"	d
+ZSTD_MINMATCH_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1239;"	d
+ZSTD_OVERLAPLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1248;"	d
+ZSTD_OVERLAPLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1248;"	d
+ZSTD_OVERLAPLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1247;"	d
+ZSTD_OVERLAPLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1247;"	d
+ZSTD_QUOTE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	117;"	d
+ZSTD_QUOTE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	117;"	d
+ZSTD_ResetDirective	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_ResetDirective;$/;"	t	typeref:enum:__anon33
+ZSTD_ResetDirective	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_ResetDirective;$/;"	t	typeref:enum:__anon4
+ZSTD_SEARCHLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1236;"	d
+ZSTD_SEARCHLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1236;"	d
+ZSTD_SEARCHLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1237;"	d
+ZSTD_SEARCHLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1237;"	d
+ZSTD_SEQUENCE_PRODUCER_ERROR	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2819;"	d
+ZSTD_SEQUENCE_PRODUCER_ERROR	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2819;"	d
+ZSTD_SKIPPABLEHEADERSIZE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1223;"	d
+ZSTD_SKIPPABLEHEADERSIZE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1223;"	d
+ZSTD_SRCSIZEHINT_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1271;"	d
+ZSTD_SRCSIZEHINT_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1271;"	d
+ZSTD_SRCSIZEHINT_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1270;"	d
+ZSTD_SRCSIZEHINT_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1270;"	d
+ZSTD_STRATEGY_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1243;"	d
+ZSTD_STRATEGY_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1243;"	d
+ZSTD_STRATEGY_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1242;"	d
+ZSTD_STRATEGY_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1242;"	d
+ZSTD_Sequence	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_Sequence;$/;"	t	typeref:struct:__anon36
+ZSTD_Sequence	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_Sequence;$/;"	t	typeref:struct:__anon7
+ZSTD_TARGETCBLOCKSIZE_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1269;"	d
+ZSTD_TARGETCBLOCKSIZE_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1269;"	d
+ZSTD_TARGETCBLOCKSIZE_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1268;"	d
+ZSTD_TARGETCBLOCKSIZE_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1268;"	d
+ZSTD_TARGETLENGTH_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1240;"	d
+ZSTD_TARGETLENGTH_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1240;"	d
+ZSTD_TARGETLENGTH_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1241;"	d
+ZSTD_TARGETLENGTH_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1241;"	d
+ZSTD_VERSION_MAJOR	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	107;"	d
+ZSTD_VERSION_MAJOR	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	107;"	d
+ZSTD_VERSION_MINOR	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	108;"	d
+ZSTD_VERSION_MINOR	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	108;"	d
+ZSTD_VERSION_NUMBER	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	110;"	d
+ZSTD_VERSION_NUMBER	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	110;"	d
+ZSTD_VERSION_RELEASE	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	109;"	d
+ZSTD_VERSION_RELEASE	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	109;"	d
+ZSTD_VERSION_STRING	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	119;"	d
+ZSTD_VERSION_STRING	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	119;"	d
+ZSTD_WINDOWLOG_LIMIT_DEFAULT	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1250;"	d
+ZSTD_WINDOWLOG_LIMIT_DEFAULT	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1250;"	d
+ZSTD_WINDOWLOG_MAX	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1228;"	d
+ZSTD_WINDOWLOG_MAX	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1228;"	d
+ZSTD_WINDOWLOG_MAX_32	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1226;"	d
+ZSTD_WINDOWLOG_MAX_32	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1226;"	d
+ZSTD_WINDOWLOG_MAX_64	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1227;"	d
+ZSTD_WINDOWLOG_MAX_64	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1227;"	d
+ZSTD_WINDOWLOG_MIN	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1229;"	d
+ZSTD_WINDOWLOG_MIN	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1229;"	d
+ZSTD_ZDICT_H	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	16;"	d
+ZSTD_ZDICT_H	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	16;"	d
+ZSTD_ZDICT_H_STATIC	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	277;"	d
+ZSTD_ZDICT_H_STATIC	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	277;"	d
+ZSTD_allocFunction	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef void* (*ZSTD_allocFunction) (void* opaque, size_t size);$/;"	t
+ZSTD_allocFunction	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef void* (*ZSTD_allocFunction) (void* opaque, size_t size);$/;"	t
+ZSTD_bounds	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_bounds;$/;"	t	typeref:struct:__anon32
+ZSTD_bounds	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_bounds;$/;"	t	typeref:struct:__anon3
+ZSTD_btlazy2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_btlazy2=6,$/;"	e	enum:__anon30
+ZSTD_btlazy2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_btlazy2=6,$/;"	e	enum:__anon1
+ZSTD_btopt	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_btopt=7,$/;"	e	enum:__anon30
+ZSTD_btopt	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_btopt=7,$/;"	e	enum:__anon1
+ZSTD_btultra	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_btultra=8,$/;"	e	enum:__anon30
+ZSTD_btultra	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_btultra=8,$/;"	e	enum:__anon1
+ZSTD_btultra2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_btultra2=9$/;"	e	enum:__anon30
+ZSTD_btultra2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_btultra2=9$/;"	e	enum:__anon1
+ZSTD_cParameter	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_cParameter;$/;"	t	typeref:enum:__anon31
+ZSTD_cParameter	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_cParameter;$/;"	t	typeref:enum:__anon2
+ZSTD_c_blockDelimiters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2115;"	d
+ZSTD_c_blockDelimiters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2115;"	d
+ZSTD_c_chainLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_chainLog=103,     \/* Size of the multi-probe search table, as a power of 2.$/;"	e	enum:__anon31
+ZSTD_c_chainLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_chainLog=103,     \/* Size of the multi-probe search table, as a power of 2.$/;"	e	enum:__anon2
+ZSTD_c_checksumFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_checksumFlag=201, \/* A 32-bits checksum of content is written at end of frame (default:0) *\/$/;"	e	enum:__anon31
+ZSTD_c_checksumFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_checksumFlag=201, \/* A 32-bits checksum of content is written at end of frame (default:0) *\/$/;"	e	enum:__anon2
+ZSTD_c_compressionLevel	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_compressionLevel=100, \/* Set compression parameters according to pre-defined cLevel table.$/;"	e	enum:__anon31
+ZSTD_c_compressionLevel	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_compressionLevel=100, \/* Set compression parameters according to pre-defined cLevel table.$/;"	e	enum:__anon2
+ZSTD_c_contentSizeFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_contentSizeFlag=200, \/* Content size will be written into frame header _whenever known_ (default:1)$/;"	e	enum:__anon31
+ZSTD_c_contentSizeFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_contentSizeFlag=200, \/* Content size will be written into frame header _whenever known_ (default:1)$/;"	e	enum:__anon2
+ZSTD_c_deterministicRefPrefix	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2175;"	d
+ZSTD_c_deterministicRefPrefix	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2175;"	d
+ZSTD_c_dictIDFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_dictIDFlag=202,   \/* When applicable, dictionary's ID is written into frame header (default:1) *\/$/;"	e	enum:__anon31
+ZSTD_c_dictIDFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_dictIDFlag=202,   \/* When applicable, dictionary's ID is written into frame header (default:1) *\/$/;"	e	enum:__anon2
+ZSTD_c_enableDedicatedDictSearch	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2051;"	d
+ZSTD_c_enableDedicatedDictSearch	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2051;"	d
+ZSTD_c_enableLongDistanceMatching	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_enableLongDistanceMatching=160, \/* Enable long distance matching.$/;"	e	enum:__anon31
+ZSTD_c_enableLongDistanceMatching	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_enableLongDistanceMatching=160, \/* Enable long distance matching.$/;"	e	enum:__anon2
+ZSTD_c_enableSeqProducerFallback	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2212;"	d
+ZSTD_c_enableSeqProducerFallback	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2212;"	d
+ZSTD_c_experimentalParam1	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam1=500,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam1	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam1=500,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam10	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam10=1007,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam10	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam10=1007,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam11	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam11=1008,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam11	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam11=1008,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam12	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam12=1009,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam12	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam12=1009,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam13	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam13=1010,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam13	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam13=1010,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam14	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam14=1011,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam14	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam14=1011,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam15	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam15=1012,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam15	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam15=1012,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam16	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam16=1013,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam16	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam16=1013,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam17	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam17=1014,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam17	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam17=1014,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam18	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam18=1015,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam18	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam18=1015,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam19	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam19=1016$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam19	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam19=1016$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam2=10,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam2=10,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam3	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam3=1000,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam3	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam3=1000,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam4	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam4=1001,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam4	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam4=1001,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam5	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam5=1002,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam5	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam5=1002,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam7	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam7=1004,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam7	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam7=1004,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam8	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam8=1005,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam8	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam8=1005,$/;"	e	enum:__anon2
+ZSTD_c_experimentalParam9	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_c_experimentalParam9=1006,$/;"	e	enum:__anon31
+ZSTD_c_experimentalParam9	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_c_experimentalParam9=1006,$/;"	e	enum:__anon2
+ZSTD_c_forceAttachDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1977;"	d
+ZSTD_c_forceAttachDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1977;"	d
+ZSTD_c_forceMaxWindow	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1971;"	d
+ZSTD_c_forceMaxWindow	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1971;"	d
+ZSTD_c_format	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1967;"	d
+ZSTD_c_format	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1967;"	d
+ZSTD_c_hashLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_hashLog=102,      \/* Size of the initial probe table, as a power of 2.$/;"	e	enum:__anon31
+ZSTD_c_hashLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_hashLog=102,      \/* Size of the initial probe table, as a power of 2.$/;"	e	enum:__anon2
+ZSTD_c_jobSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_jobSize=401,      \/* Size of a compression job. This value is enforced only when nbWorkers >= 1.$/;"	e	enum:__anon31
+ZSTD_c_jobSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_jobSize=401,      \/* Size of a compression job. This value is enforced only when nbWorkers >= 1.$/;"	e	enum:__anon2
+ZSTD_c_ldmBucketSizeLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_ldmBucketSizeLog=163, \/* Log size of each bucket in the LDM hash table for collision resolution.$/;"	e	enum:__anon31
+ZSTD_c_ldmBucketSizeLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_ldmBucketSizeLog=163, \/* Log size of each bucket in the LDM hash table for collision resolution.$/;"	e	enum:__anon2
+ZSTD_c_ldmHashLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_ldmHashLog=161,   \/* Size of the table for long distance matching, as a power of 2.$/;"	e	enum:__anon31
+ZSTD_c_ldmHashLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_ldmHashLog=161,   \/* Size of the table for long distance matching, as a power of 2.$/;"	e	enum:__anon2
+ZSTD_c_ldmHashRateLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_ldmHashRateLog=164, \/* Frequency of inserting\/looking up entries into the LDM hash table.$/;"	e	enum:__anon31
+ZSTD_c_ldmHashRateLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_ldmHashRateLog=164, \/* Frequency of inserting\/looking up entries into the LDM hash table.$/;"	e	enum:__anon2
+ZSTD_c_ldmMinMatch	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_ldmMinMatch=162,  \/* Minimum match size for long distance matcher.$/;"	e	enum:__anon31
+ZSTD_c_ldmMinMatch	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_ldmMinMatch=162,  \/* Minimum match size for long distance matcher.$/;"	e	enum:__anon2
+ZSTD_c_literalCompressionMode	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1989;"	d
+ZSTD_c_literalCompressionMode	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1989;"	d
+ZSTD_c_maxBlockSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2224;"	d
+ZSTD_c_maxBlockSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2224;"	d
+ZSTD_c_minMatch	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_minMatch=105,     \/* Minimum size of searched matches.$/;"	e	enum:__anon31
+ZSTD_c_minMatch	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_minMatch=105,     \/* Minimum size of searched matches.$/;"	e	enum:__anon2
+ZSTD_c_nbWorkers	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_nbWorkers=400,    \/* Select how many threads will be spawned to compress in parallel.$/;"	e	enum:__anon31
+ZSTD_c_nbWorkers	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_nbWorkers=400,    \/* Select how many threads will be spawned to compress in parallel.$/;"	e	enum:__anon2
+ZSTD_c_overlapLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_overlapLog=402,   \/* Control the overlap size, as a fraction of window size.$/;"	e	enum:__anon31
+ZSTD_c_overlapLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_overlapLog=402,   \/* Control the overlap size, as a fraction of window size.$/;"	e	enum:__anon2
+ZSTD_c_prefetchCDictTables	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2198;"	d
+ZSTD_c_prefetchCDictTables	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2198;"	d
+ZSTD_c_rsyncable	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1962;"	d
+ZSTD_c_rsyncable	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1962;"	d
+ZSTD_c_searchForExternalRepcodes	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2248;"	d
+ZSTD_c_searchForExternalRepcodes	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2248;"	d
+ZSTD_c_searchLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_searchLog=104,    \/* Number of search attempts, as a power of 2.$/;"	e	enum:__anon31
+ZSTD_c_searchLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_searchLog=104,    \/* Number of search attempts, as a power of 2.$/;"	e	enum:__anon2
+ZSTD_c_srcSizeHint	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	1995;"	d
+ZSTD_c_srcSizeHint	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	1995;"	d
+ZSTD_c_stableInBuffer	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2084;"	d
+ZSTD_c_stableInBuffer	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2084;"	d
+ZSTD_c_stableOutBuffer	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2104;"	d
+ZSTD_c_stableOutBuffer	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2104;"	d
+ZSTD_c_strategy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_strategy=107,     \/* See ZSTD_strategy enum definition.$/;"	e	enum:__anon31
+ZSTD_c_strategy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_strategy=107,     \/* See ZSTD_strategy enum definition.$/;"	e	enum:__anon2
+ZSTD_c_targetCBlockSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_targetCBlockSize=130, \/* v1.5.6+$/;"	e	enum:__anon31
+ZSTD_c_targetCBlockSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_targetCBlockSize=130, \/* v1.5.6+$/;"	e	enum:__anon2
+ZSTD_c_targetLength	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_targetLength=106, \/* Impact of this field depends on strategy.$/;"	e	enum:__anon31
+ZSTD_c_targetLength	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_targetLength=106, \/* Impact of this field depends on strategy.$/;"	e	enum:__anon2
+ZSTD_c_useBlockSplitter	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2143;"	d
+ZSTD_c_useBlockSplitter	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2143;"	d
+ZSTD_c_useRowMatchFinder	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2155;"	d
+ZSTD_c_useRowMatchFinder	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2155;"	d
+ZSTD_c_validateSequences	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2132;"	d
+ZSTD_c_validateSequences	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2132;"	d
+ZSTD_c_windowLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_c_windowLog=101,    \/* Maximum allowed back-reference distance, expressed as power of 2.$/;"	e	enum:__anon31
+ZSTD_c_windowLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_c_windowLog=101,    \/* Maximum allowed back-reference distance, expressed as power of 2.$/;"	e	enum:__anon2
+ZSTD_compressionParameters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_compressionParameters;$/;"	t	typeref:struct:__anon37
+ZSTD_compressionParameters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_compressionParameters;$/;"	t	typeref:struct:__anon8
+ZSTD_customMem	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	t	typeref:struct:__anon51
+ZSTD_customMem	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	t	typeref:struct:__anon22
+ZSTD_dParameter	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_dParameter;$/;"	t	typeref:enum:__anon34
+ZSTD_dParameter	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_dParameter;$/;"	t	typeref:enum:__anon5
+ZSTD_d_disableHuffmanAssembly	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2468;"	d
+ZSTD_d_disableHuffmanAssembly	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2468;"	d
+ZSTD_d_experimentalParam1	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam1=1000,$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam1	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam1=1000,$/;"	e	enum:__anon5
+ZSTD_d_experimentalParam2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam2=1001,$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam2=1001,$/;"	e	enum:__anon5
+ZSTD_d_experimentalParam3	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam3=1002,$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam3	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam3=1002,$/;"	e	enum:__anon5
+ZSTD_d_experimentalParam4	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam4=1003,$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam4	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam4=1003,$/;"	e	enum:__anon5
+ZSTD_d_experimentalParam5	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam5=1004,$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam5	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam5=1004,$/;"	e	enum:__anon5
+ZSTD_d_experimentalParam6	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^     ZSTD_d_experimentalParam6=1005$/;"	e	enum:__anon34
+ZSTD_d_experimentalParam6	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^     ZSTD_d_experimentalParam6=1005$/;"	e	enum:__anon5
+ZSTD_d_forceIgnoreChecksum	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2434;"	d
+ZSTD_d_forceIgnoreChecksum	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2434;"	d
+ZSTD_d_format	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2392;"	d
+ZSTD_d_format	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2392;"	d
+ZSTD_d_ignoreChecksum	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_d_ignoreChecksum = 1$/;"	e	enum:__anon43
+ZSTD_d_ignoreChecksum	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_d_ignoreChecksum = 1$/;"	e	enum:__anon14
+ZSTD_d_maxBlockSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2484;"	d
+ZSTD_d_maxBlockSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2484;"	d
+ZSTD_d_refMultipleDDicts	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2457;"	d
+ZSTD_d_refMultipleDDicts	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2457;"	d
+ZSTD_d_stableOutBuffer	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	2423;"	d
+ZSTD_d_stableOutBuffer	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	2423;"	d
+ZSTD_d_validateChecksum	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_d_validateChecksum = 0,$/;"	e	enum:__anon43
+ZSTD_d_validateChecksum	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_d_validateChecksum = 0,$/;"	e	enum:__anon14
+ZSTD_d_windowLogMax	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_d_windowLogMax=100, \/* Select a size limit (in power of 2) beyond which$/;"	e	enum:__anon34
+ZSTD_d_windowLogMax	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_d_windowLogMax=100, \/* Select a size limit (in power of 2) beyond which$/;"	e	enum:__anon5
+ZSTD_dct_auto	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dct_auto = 0,       \/* dictionary is "full" when starting with ZSTD_MAGIC_DICTIONARY, otherwise it is "rawContent" *\/$/;"	e	enum:__anon40
+ZSTD_dct_auto	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dct_auto = 0,       \/* dictionary is "full" when starting with ZSTD_MAGIC_DICTIONARY, otherwise it is "rawContent" *\/$/;"	e	enum:__anon11
+ZSTD_dct_fullDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dct_fullDict = 2    \/* refuses to load a dictionary if it does not respect Zstandard's specification, starting with ZSTD_MAGIC_DICTIONARY *\/$/;"	e	enum:__anon40
+ZSTD_dct_fullDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dct_fullDict = 2    \/* refuses to load a dictionary if it does not respect Zstandard's specification, starting with ZSTD_MAGIC_DICTIONARY *\/$/;"	e	enum:__anon11
+ZSTD_dct_rawContent	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dct_rawContent = 1, \/* ensures dictionary is always loaded as rawContent, even if it starts with ZSTD_MAGIC_DICTIONARY *\/$/;"	e	enum:__anon40
+ZSTD_dct_rawContent	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dct_rawContent = 1, \/* ensures dictionary is always loaded as rawContent, even if it starts with ZSTD_MAGIC_DICTIONARY *\/$/;"	e	enum:__anon11
+ZSTD_defaultCMem	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^ZSTD_customMem const ZSTD_defaultCMem = { NULL, NULL, NULL };  \/**< this constant defers to stdlib's functions *\/$/;"	v
+ZSTD_defaultCMem	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^ZSTD_customMem const ZSTD_defaultCMem = { NULL, NULL, NULL };  \/**< this constant defers to stdlib's functions *\/$/;"	v
+ZSTD_dfast	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_dfast=2,$/;"	e	enum:__anon30
+ZSTD_dfast	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_dfast=2,$/;"	e	enum:__anon1
+ZSTD_dictAttachPref_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_dictAttachPref_e;$/;"	t	typeref:enum:__anon45
+ZSTD_dictAttachPref_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_dictAttachPref_e;$/;"	t	typeref:enum:__anon16
+ZSTD_dictContentType_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_dictContentType_e;$/;"	t	typeref:enum:__anon40
+ZSTD_dictContentType_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_dictContentType_e;$/;"	t	typeref:enum:__anon11
+ZSTD_dictDefaultAttach	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dictDefaultAttach = 0, \/* Use the default heuristic. *\/$/;"	e	enum:__anon45
+ZSTD_dictDefaultAttach	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dictDefaultAttach = 0, \/* Use the default heuristic. *\/$/;"	e	enum:__anon16
+ZSTD_dictForceAttach	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dictForceAttach   = 1, \/* Never copy the dictionary. *\/$/;"	e	enum:__anon45
+ZSTD_dictForceAttach	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dictForceAttach   = 1, \/* Never copy the dictionary. *\/$/;"	e	enum:__anon16
+ZSTD_dictForceCopy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dictForceCopy     = 2, \/* Always copy the dictionary. *\/$/;"	e	enum:__anon45
+ZSTD_dictForceCopy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dictForceCopy     = 2, \/* Always copy the dictionary. *\/$/;"	e	enum:__anon16
+ZSTD_dictForceLoad	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dictForceLoad     = 3  \/* Always reload the dictionary *\/$/;"	e	enum:__anon45
+ZSTD_dictForceLoad	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dictForceLoad     = 3  \/* Always reload the dictionary *\/$/;"	e	enum:__anon16
+ZSTD_dictLoadMethod_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_dictLoadMethod_e;$/;"	t	typeref:enum:__anon41
+ZSTD_dictLoadMethod_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_dictLoadMethod_e;$/;"	t	typeref:enum:__anon12
+ZSTD_dlm_byCopy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dlm_byCopy = 0,  \/**< Copy dictionary content internally *\/$/;"	e	enum:__anon41
+ZSTD_dlm_byCopy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dlm_byCopy = 0,  \/**< Copy dictionary content internally *\/$/;"	e	enum:__anon12
+ZSTD_dlm_byRef	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_dlm_byRef = 1    \/**< Reference dictionary content -- the dictionary buffer must outlive its users. *\/$/;"	e	enum:__anon41
+ZSTD_dlm_byRef	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_dlm_byRef = 1    \/**< Reference dictionary content -- the dictionary buffer must outlive its users. *\/$/;"	e	enum:__anon12
+ZSTD_e_continue	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_e_continue=0, \/* collect more data, encoder decides when to output compressed result, for optimal compression ratio *\/$/;"	e	enum:__anon35
+ZSTD_e_continue	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_e_continue=0, \/* collect more data, encoder decides when to output compressed result, for optimal compression ratio *\/$/;"	e	enum:__anon6
+ZSTD_e_end	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_e_end=2       \/* flush any remaining data _and_ close current frame.$/;"	e	enum:__anon35
+ZSTD_e_end	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_e_end=2       \/* flush any remaining data _and_ close current frame.$/;"	e	enum:__anon6
+ZSTD_e_flush	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_e_flush=1,    \/* flush any data provided so far,$/;"	e	enum:__anon35
+ZSTD_e_flush	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_e_flush=1,    \/* flush any data provided so far,$/;"	e	enum:__anon6
+ZSTD_error_GENERIC	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_GENERIC  = 1,$/;"	e	enum:__anon54
+ZSTD_error_GENERIC	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_GENERIC  = 1,$/;"	e	enum:__anon25
+ZSTD_error_checksum_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_checksum_wrong      = 22,$/;"	e	enum:__anon54
+ZSTD_error_checksum_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_checksum_wrong      = 22,$/;"	e	enum:__anon25
+ZSTD_error_corruption_detected	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_corruption_detected = 20,$/;"	e	enum:__anon54
+ZSTD_error_corruption_detected	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_corruption_detected = 20,$/;"	e	enum:__anon25
+ZSTD_error_dictionaryCreation_failed	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dictionaryCreation_failed = 34,$/;"	e	enum:__anon54
+ZSTD_error_dictionaryCreation_failed	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dictionaryCreation_failed = 34,$/;"	e	enum:__anon25
+ZSTD_error_dictionary_corrupted	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dictionary_corrupted      = 30,$/;"	e	enum:__anon54
+ZSTD_error_dictionary_corrupted	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dictionary_corrupted      = 30,$/;"	e	enum:__anon25
+ZSTD_error_dictionary_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dictionary_wrong          = 32,$/;"	e	enum:__anon54
+ZSTD_error_dictionary_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dictionary_wrong          = 32,$/;"	e	enum:__anon25
+ZSTD_error_dstBuffer_null	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dstBuffer_null   = 74,$/;"	e	enum:__anon54
+ZSTD_error_dstBuffer_null	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dstBuffer_null   = 74,$/;"	e	enum:__anon25
+ZSTD_error_dstBuffer_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dstBuffer_wrong     = 104,$/;"	e	enum:__anon54
+ZSTD_error_dstBuffer_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dstBuffer_wrong     = 104,$/;"	e	enum:__anon25
+ZSTD_error_dstSize_tooSmall	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_dstSize_tooSmall = 70,$/;"	e	enum:__anon54
+ZSTD_error_dstSize_tooSmall	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_dstSize_tooSmall = 70,$/;"	e	enum:__anon25
+ZSTD_error_externalSequences_invalid	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_externalSequences_invalid = 107,$/;"	e	enum:__anon54
+ZSTD_error_externalSequences_invalid	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_externalSequences_invalid = 107,$/;"	e	enum:__anon25
+ZSTD_error_frameIndex_tooLarge	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_frameIndex_tooLarge = 100,$/;"	e	enum:__anon54
+ZSTD_error_frameIndex_tooLarge	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_frameIndex_tooLarge = 100,$/;"	e	enum:__anon25
+ZSTD_error_frameParameter_unsupported	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_frameParameter_unsupported    = 14,$/;"	e	enum:__anon54
+ZSTD_error_frameParameter_unsupported	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_frameParameter_unsupported    = 14,$/;"	e	enum:__anon25
+ZSTD_error_frameParameter_windowTooLarge	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_frameParameter_windowTooLarge = 16,$/;"	e	enum:__anon54
+ZSTD_error_frameParameter_windowTooLarge	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_frameParameter_windowTooLarge = 16,$/;"	e	enum:__anon25
+ZSTD_error_init_missing	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_init_missing      = 62,$/;"	e	enum:__anon54
+ZSTD_error_init_missing	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_init_missing      = 62,$/;"	e	enum:__anon25
+ZSTD_error_literals_headerWrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_literals_headerWrong = 24,$/;"	e	enum:__anon54
+ZSTD_error_literals_headerWrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_literals_headerWrong = 24,$/;"	e	enum:__anon25
+ZSTD_error_maxCode	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_maxCode = 120  \/* never EVER use this value directly, it can change in future versions! Use ZSTD_isError() instead *\/$/;"	e	enum:__anon54
+ZSTD_error_maxCode	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_maxCode = 120  \/* never EVER use this value directly, it can change in future versions! Use ZSTD_isError() instead *\/$/;"	e	enum:__anon25
+ZSTD_error_maxSymbolValue_tooLarge	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_maxSymbolValue_tooLarge = 46,$/;"	e	enum:__anon54
+ZSTD_error_maxSymbolValue_tooLarge	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_maxSymbolValue_tooLarge = 46,$/;"	e	enum:__anon25
+ZSTD_error_maxSymbolValue_tooSmall	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_maxSymbolValue_tooSmall = 48,$/;"	e	enum:__anon54
+ZSTD_error_maxSymbolValue_tooSmall	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_maxSymbolValue_tooSmall = 48,$/;"	e	enum:__anon25
+ZSTD_error_memory_allocation	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_memory_allocation = 64,$/;"	e	enum:__anon54
+ZSTD_error_memory_allocation	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_memory_allocation = 64,$/;"	e	enum:__anon25
+ZSTD_error_noForwardProgress_destFull	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_noForwardProgress_destFull = 80,$/;"	e	enum:__anon54
+ZSTD_error_noForwardProgress_destFull	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_noForwardProgress_destFull = 80,$/;"	e	enum:__anon25
+ZSTD_error_noForwardProgress_inputEmpty	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_noForwardProgress_inputEmpty = 82,$/;"	e	enum:__anon54
+ZSTD_error_noForwardProgress_inputEmpty	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_noForwardProgress_inputEmpty = 82,$/;"	e	enum:__anon25
+ZSTD_error_no_error	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_no_error = 0,$/;"	e	enum:__anon54
+ZSTD_error_no_error	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_no_error = 0,$/;"	e	enum:__anon25
+ZSTD_error_parameter_combination_unsupported	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_parameter_combination_unsupported = 41,$/;"	e	enum:__anon54
+ZSTD_error_parameter_combination_unsupported	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_parameter_combination_unsupported = 41,$/;"	e	enum:__anon25
+ZSTD_error_parameter_outOfBound	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_parameter_outOfBound    = 42,$/;"	e	enum:__anon54
+ZSTD_error_parameter_outOfBound	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_parameter_outOfBound    = 42,$/;"	e	enum:__anon25
+ZSTD_error_parameter_unsupported	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_parameter_unsupported   = 40,$/;"	e	enum:__anon54
+ZSTD_error_parameter_unsupported	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_parameter_unsupported   = 40,$/;"	e	enum:__anon25
+ZSTD_error_prefix_unknown	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_prefix_unknown                = 10,$/;"	e	enum:__anon54
+ZSTD_error_prefix_unknown	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_prefix_unknown                = 10,$/;"	e	enum:__anon25
+ZSTD_error_seekableIO	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_seekableIO          = 102,$/;"	e	enum:__anon54
+ZSTD_error_seekableIO	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_seekableIO          = 102,$/;"	e	enum:__anon25
+ZSTD_error_sequenceProducer_failed	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_sequenceProducer_failed = 106,$/;"	e	enum:__anon54
+ZSTD_error_sequenceProducer_failed	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_sequenceProducer_failed = 106,$/;"	e	enum:__anon25
+ZSTD_error_srcBuffer_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_srcBuffer_wrong     = 105,$/;"	e	enum:__anon54
+ZSTD_error_srcBuffer_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_srcBuffer_wrong     = 105,$/;"	e	enum:__anon25
+ZSTD_error_srcSize_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_srcSize_wrong    = 72,$/;"	e	enum:__anon54
+ZSTD_error_srcSize_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_srcSize_wrong    = 72,$/;"	e	enum:__anon25
+ZSTD_error_stabilityCondition_notRespected	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_stabilityCondition_notRespected = 50,$/;"	e	enum:__anon54
+ZSTD_error_stabilityCondition_notRespected	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_stabilityCondition_notRespected = 50,$/;"	e	enum:__anon25
+ZSTD_error_stage_wrong	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_stage_wrong       = 60,$/;"	e	enum:__anon54
+ZSTD_error_stage_wrong	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_stage_wrong       = 60,$/;"	e	enum:__anon25
+ZSTD_error_tableLog_tooLarge	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_tableLog_tooLarge       = 44,$/;"	e	enum:__anon54
+ZSTD_error_tableLog_tooLarge	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_tableLog_tooLarge       = 44,$/;"	e	enum:__anon25
+ZSTD_error_version_unsupported	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_version_unsupported           = 12,$/;"	e	enum:__anon54
+ZSTD_error_version_unsupported	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_version_unsupported           = 12,$/;"	e	enum:__anon25
+ZSTD_error_workSpace_tooSmall	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd_errors.h	/^  ZSTD_error_workSpace_tooSmall= 66,$/;"	e	enum:__anon54
+ZSTD_error_workSpace_tooSmall	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd_errors.h	/^  ZSTD_error_workSpace_tooSmall= 66,$/;"	e	enum:__anon25
+ZSTD_f_zstd1	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_f_zstd1 = 0,           \/* zstd frame format, specified in zstd_compression_format.md (default) *\/$/;"	e	enum:__anon42
+ZSTD_f_zstd1	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_f_zstd1 = 0,           \/* zstd frame format, specified in zstd_compression_format.md (default) *\/$/;"	e	enum:__anon13
+ZSTD_f_zstd1_magicless	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_f_zstd1_magicless = 1  \/* Variant of zstd frame format, without initial 4-bytes magic number.$/;"	e	enum:__anon42
+ZSTD_f_zstd1_magicless	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_f_zstd1_magicless = 1  \/* Variant of zstd frame format, without initial 4-bytes magic number.$/;"	e	enum:__anon13
+ZSTD_fast	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTD_fast=1,$/;"	e	enum:__anon30
+ZSTD_fast	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTD_fast=1,$/;"	e	enum:__anon1
+ZSTD_forceIgnoreChecksum_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_forceIgnoreChecksum_e;$/;"	t	typeref:enum:__anon43
+ZSTD_forceIgnoreChecksum_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_forceIgnoreChecksum_e;$/;"	t	typeref:enum:__anon14
+ZSTD_format_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_format_e;$/;"	t	typeref:enum:__anon42
+ZSTD_format_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_format_e;$/;"	t	typeref:enum:__anon13
+ZSTD_frame	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	e	enum:__anon48
+ZSTD_frame	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	e	enum:__anon19
+ZSTD_frameHeader	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_frameHeader;$/;"	t	typeref:struct:__anon49
+ZSTD_frameHeader	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_frameHeader;$/;"	t	typeref:struct:__anon20
+ZSTD_frameParameters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_frameParameters;$/;"	t	typeref:struct:__anon38
+ZSTD_frameParameters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_frameParameters;$/;"	t	typeref:struct:__anon9
+ZSTD_frameProgression	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_frameProgression;$/;"	t	typeref:struct:__anon52
+ZSTD_frameProgression	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_frameProgression;$/;"	t	typeref:struct:__anon23
+ZSTD_frameType_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	t	typeref:enum:__anon48
+ZSTD_frameType_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	t	typeref:enum:__anon19
+ZSTD_freeFunction	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef void  (*ZSTD_freeFunction) (void* opaque, void* address);$/;"	t
+ZSTD_freeFunction	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef void  (*ZSTD_freeFunction) (void* opaque, void* address);$/;"	t
+ZSTD_greedy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_greedy=3,$/;"	e	enum:__anon30
+ZSTD_greedy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_greedy=3,$/;"	e	enum:__anon1
+ZSTD_inBuffer	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_inBuffer;$/;"	t	typeref:struct:ZSTD_inBuffer_s
+ZSTD_inBuffer	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_inBuffer;$/;"	t	typeref:struct:ZSTD_inBuffer_s
+ZSTD_inBuffer_s	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_inBuffer_s {$/;"	s
+ZSTD_inBuffer_s	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_inBuffer_s {$/;"	s
+ZSTD_lazy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_lazy=4,$/;"	e	enum:__anon30
+ZSTD_lazy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_lazy=4,$/;"	e	enum:__anon1
+ZSTD_lazy2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^               ZSTD_lazy2=5,$/;"	e	enum:__anon30
+ZSTD_lazy2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^               ZSTD_lazy2=5,$/;"	e	enum:__anon1
+ZSTD_lcm_auto	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_lcm_auto = 0,          \/**< Automatically determine the compression mode based on the compression level.$/;"	e	enum:__anon46
+ZSTD_lcm_auto	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_lcm_auto = 0,          \/**< Automatically determine the compression mode based on the compression level.$/;"	e	enum:__anon17
+ZSTD_lcm_huffman	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_lcm_huffman = 1,       \/**< Always attempt Huffman compression. Uncompressed literals will still be$/;"	e	enum:__anon46
+ZSTD_lcm_huffman	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_lcm_huffman = 1,       \/**< Always attempt Huffman compression. Uncompressed literals will still be$/;"	e	enum:__anon17
+ZSTD_lcm_uncompressed	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_lcm_uncompressed = 2   \/**< Always emit uncompressed literals. *\/$/;"	e	enum:__anon46
+ZSTD_lcm_uncompressed	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_lcm_uncompressed = 2   \/**< Always emit uncompressed literals. *\/$/;"	e	enum:__anon17
+ZSTD_literalCompressionMode_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_literalCompressionMode_e;$/;"	t	typeref:enum:__anon46
+ZSTD_literalCompressionMode_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_literalCompressionMode_e;$/;"	t	typeref:enum:__anon17
+ZSTD_nextInputType_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	t	typeref:enum:__anon53
+ZSTD_nextInputType_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	t	typeref:enum:__anon24
+ZSTD_outBuffer	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_outBuffer;$/;"	t	typeref:struct:ZSTD_outBuffer_s
+ZSTD_outBuffer	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_outBuffer;$/;"	t	typeref:struct:ZSTD_outBuffer_s
+ZSTD_outBuffer_s	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct ZSTD_outBuffer_s {$/;"	s
+ZSTD_outBuffer_s	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct ZSTD_outBuffer_s {$/;"	s
+ZSTD_paramSwitch_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_paramSwitch_e;$/;"	t	typeref:enum:__anon47
+ZSTD_paramSwitch_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_paramSwitch_e;$/;"	t	typeref:enum:__anon18
+ZSTD_parameters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_parameters;$/;"	t	typeref:struct:__anon39
+ZSTD_parameters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_parameters;$/;"	t	typeref:struct:__anon10
+ZSTD_ps_auto	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_ps_auto = 0,         \/* Let the library automatically determine whether the feature shall be enabled *\/$/;"	e	enum:__anon47
+ZSTD_ps_auto	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_ps_auto = 0,         \/* Let the library automatically determine whether the feature shall be enabled *\/$/;"	e	enum:__anon18
+ZSTD_ps_disable	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_ps_disable = 2       \/* Do not use the feature *\/$/;"	e	enum:__anon47
+ZSTD_ps_disable	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_ps_disable = 2       \/* Do not use the feature *\/$/;"	e	enum:__anon18
+ZSTD_ps_enable	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_ps_enable = 1,       \/* Force-enable the feature *\/$/;"	e	enum:__anon47
+ZSTD_ps_enable	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_ps_enable = 1,       \/* Force-enable the feature *\/$/;"	e	enum:__anon18
+ZSTD_refMultipleDDicts_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_refMultipleDDicts_e;$/;"	t	typeref:enum:__anon44
+ZSTD_refMultipleDDicts_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_refMultipleDDicts_e;$/;"	t	typeref:enum:__anon15
+ZSTD_reset_parameters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_reset_parameters = 2,$/;"	e	enum:__anon33
+ZSTD_reset_parameters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_reset_parameters = 2,$/;"	e	enum:__anon4
+ZSTD_reset_session_and_parameters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_reset_session_and_parameters = 3$/;"	e	enum:__anon33
+ZSTD_reset_session_and_parameters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_reset_session_and_parameters = 3$/;"	e	enum:__anon4
+ZSTD_reset_session_only	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_reset_session_only = 1,$/;"	e	enum:__anon33
+ZSTD_reset_session_only	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_reset_session_only = 1,$/;"	e	enum:__anon4
+ZSTD_rmd_refMultipleDDicts	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_rmd_refMultipleDDicts = 1$/;"	e	enum:__anon44
+ZSTD_rmd_refMultipleDDicts	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_rmd_refMultipleDDicts = 1$/;"	e	enum:__anon15
+ZSTD_rmd_refSingleDDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_rmd_refSingleDDict = 0,$/;"	e	enum:__anon44
+ZSTD_rmd_refSingleDDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_rmd_refSingleDDict = 0,$/;"	e	enum:__anon15
+ZSTD_sequenceFormat_e	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_sequenceFormat_e;$/;"	t	typeref:enum:__anon50
+ZSTD_sequenceFormat_e	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_sequenceFormat_e;$/;"	t	typeref:enum:__anon21
+ZSTD_sequenceProducer_F	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef size_t (*ZSTD_sequenceProducer_F) ($/;"	t
+ZSTD_sequenceProducer_F	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef size_t (*ZSTD_sequenceProducer_F) ($/;"	t
+ZSTD_sf_explicitBlockDelimiters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_sf_explicitBlockDelimiters = 1    \/* Representation of ZSTD_Sequence contains explicit block delimiters *\/$/;"	e	enum:__anon50
+ZSTD_sf_explicitBlockDelimiters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_sf_explicitBlockDelimiters = 1    \/* Representation of ZSTD_Sequence contains explicit block delimiters *\/$/;"	e	enum:__anon21
+ZSTD_sf_noBlockDelimiters	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  ZSTD_sf_noBlockDelimiters = 0,         \/* Representation of ZSTD_Sequence has no block delimiters, sequences only *\/$/;"	e	enum:__anon50
+ZSTD_sf_noBlockDelimiters	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  ZSTD_sf_noBlockDelimiters = 0,         \/* Representation of ZSTD_Sequence has no block delimiters, sequences only *\/$/;"	e	enum:__anon21
+ZSTD_skippableFrame	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	e	enum:__anon48
+ZSTD_skippableFrame	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTD_frame, ZSTD_skippableFrame } ZSTD_frameType_e;$/;"	e	enum:__anon19
+ZSTD_strategy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^} ZSTD_strategy;$/;"	t	typeref:enum:__anon30
+ZSTD_strategy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^} ZSTD_strategy;$/;"	t	typeref:enum:__anon1
+ZSTD_threadPool	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct POOL_ctx_s ZSTD_threadPool;$/;"	t	typeref:struct:POOL_ctx_s
+ZSTD_threadPool	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct POOL_ctx_s ZSTD_threadPool;$/;"	t	typeref:struct:POOL_ctx_s
+ZSTDnit_block	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_block	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+ZSTDnit_blockHeader	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_blockHeader	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+ZSTDnit_checksum	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_checksum	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+ZSTDnit_frameHeader	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_frameHeader	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+ZSTDnit_lastBlock	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_lastBlock	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+ZSTDnit_skippableFrame	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon53
+ZSTDnit_skippableFrame	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef enum { ZSTDnit_frameHeader, ZSTDnit_blockHeader, ZSTDnit_block, ZSTDnit_lastBlock, ZSTDnit_checksum, ZSTDnit_skippableFrame } ZSTD_nextInputType_e;$/;"	e	enum:__anon24
+_reserved1	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned _reserved1;$/;"	m	struct:__anon49
+_reserved1	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned _reserved1;$/;"	m	struct:__anon20
+_reserved2	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned _reserved2;$/;"	m	struct:__anon49
+_reserved2	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned _reserved2;$/;"	m	struct:__anon20
+accel	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned accel;              \/* Acceleration level: constraint: 0 < accel <= 10, higher means faster and less accurate, 0 means default(1) *\/$/;"	m	struct:__anon57
+accel	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned accel;              \/* Acceleration level: constraint: 0 < accel <= 10, higher means faster and less accurate, 0 means default(1) *\/$/;"	m	struct:__anon28
+blockSizeMax	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned blockSizeMax;$/;"	m	struct:__anon49
+blockSizeMax	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned blockSizeMax;$/;"	m	struct:__anon20
+cParams	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_compressionParameters cParams;$/;"	m	struct:__anon39
+cParams	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_compressionParameters cParams;$/;"	m	struct:__anon10
+chainLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned chainLog;        \/**< fully searched segment : larger == more compression, slower, more memory (useless for fast) *\/$/;"	m	struct:__anon37
+chainLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned chainLog;        \/**< fully searched segment : larger == more compression, slower, more memory (useless for fast) *\/$/;"	m	struct:__anon8
+checksumFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    int checksumFlag;    \/**< 1: generate a 32-bits checksum using XXH64 algorithm at end of frame, for error detection *\/$/;"	m	struct:__anon38
+checksumFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned checksumFlag;$/;"	m	struct:__anon49
+checksumFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    int checksumFlag;    \/**< 1: generate a 32-bits checksum using XXH64 algorithm at end of frame, for error detection *\/$/;"	m	struct:__anon9
+checksumFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned checksumFlag;$/;"	m	struct:__anon20
+compressionLevel	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    int      compressionLevel;   \/**< optimize for a specific zstd compression level; 0 means default *\/$/;"	m	struct:__anon55
+compressionLevel	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    int      compressionLevel;   \/**< optimize for a specific zstd compression level; 0 means default *\/$/;"	m	struct:__anon26
+consumed	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long consumed;   \/* nb input bytes actually compressed *\/$/;"	m	struct:__anon52
+consumed	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long consumed;   \/* nb input bytes actually compressed *\/$/;"	m	struct:__anon23
+contentSizeFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    int contentSizeFlag; \/**< 1: content size will be in frame header (when known) *\/$/;"	m	struct:__anon38
+contentSizeFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    int contentSizeFlag; \/**< 1: content size will be in frame header (when known) *\/$/;"	m	struct:__anon9
+currentJobID	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned currentJobID;         \/* MT only : latest started job nb *\/$/;"	m	struct:__anon52
+currentJobID	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned currentJobID;         \/* MT only : latest started job nb *\/$/;"	m	struct:__anon23
+customAlloc	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon51
+customAlloc	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon22
+customFree	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon51
+customFree	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon22
+d	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned d;                  \/* dmer size : constraint: 0 < d <= k : Reasonable range [6, 16] *\/$/;"	m	struct:__anon56
+d	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned d;                  \/* dmer size : constraint: 0 < d <= k : Reasonable range [6, 16] *\/$/;"	m	struct:__anon57
+d	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned d;                  \/* dmer size : constraint: 0 < d <= k : Reasonable range [6, 16] *\/$/;"	m	struct:__anon27
+d	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned d;                  \/* dmer size : constraint: 0 < d <= k : Reasonable range [6, 16] *\/$/;"	m	struct:__anon28
+dictID	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned dictID;             \/**< force dictID value; 0 means auto mode (32-bits random value)$/;"	m	struct:__anon55
+dictID	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned dictID;$/;"	m	struct:__anon49
+dictID	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned dictID;             \/**< force dictID value; 0 means auto mode (32-bits random value)$/;"	m	struct:__anon26
+dictID	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned dictID;$/;"	m	struct:__anon20
+dst	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  void*  dst;         \/**< start of output buffer *\/$/;"	m	struct:ZSTD_outBuffer_s
+dst	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  void*  dst;         \/**< start of output buffer *\/$/;"	m	struct:ZSTD_outBuffer_s
+error	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    size_t error;$/;"	m	struct:__anon32
+error	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    size_t error;$/;"	m	struct:__anon3
+f	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned f;                  \/* log of size of frequency array : constraint: 0 < f <= 31 : 1 means default(20)*\/$/;"	m	struct:__anon57
+f	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned f;                  \/* log of size of frequency array : constraint: 0 < f <= 31 : 1 means default(20)*\/$/;"	m	struct:__anon28
+fParams	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_frameParameters fParams;$/;"	m	struct:__anon39
+fParams	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_frameParameters fParams;$/;"	m	struct:__anon10
+flushed	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long flushed;    \/* nb of compressed bytes flushed : not provided; can be tracked from caller side *\/$/;"	m	struct:__anon52
+flushed	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long flushed;    \/* nb of compressed bytes flushed : not provided; can be tracked from caller side *\/$/;"	m	struct:__anon23
+frameContentSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long frameContentSize; \/* if == ZSTD_CONTENTSIZE_UNKNOWN, it means this field is not available. 0 means "empty" *\/$/;"	m	struct:__anon49
+frameContentSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long frameContentSize; \/* if == ZSTD_CONTENTSIZE_UNKNOWN, it means this field is not available. 0 means "empty" *\/$/;"	m	struct:__anon20
+frameType	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_frameType_e frameType;          \/* if == ZSTD_skippableFrame, frameContentSize is the size of skippable content *\/$/;"	m	struct:__anon49
+frameType	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_frameType_e frameType;          \/* if == ZSTD_skippableFrame, frameContentSize is the size of skippable content *\/$/;"	m	struct:__anon20
+hashLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned hashLog;         \/**< dispatch table : larger == faster, more memory *\/$/;"	m	struct:__anon37
+hashLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned hashLog;         \/**< dispatch table : larger == faster, more memory *\/$/;"	m	struct:__anon8
+headerSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned headerSize;$/;"	m	struct:__anon49
+headerSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned headerSize;$/;"	m	struct:__anon20
+ingested	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long ingested;   \/* nb input bytes read and buffered *\/$/;"	m	struct:__anon52
+ingested	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long ingested;   \/* nb input bytes read and buffered *\/$/;"	m	struct:__anon23
+k	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned k;                  \/* Segment size : constraint: 0 < k : Reasonable range [16, 2048+] *\/$/;"	m	struct:__anon56
+k	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned k;                  \/* Segment size : constraint: 0 < k : Reasonable range [16, 2048+] *\/$/;"	m	struct:__anon57
+k	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned k;                  \/* Segment size : constraint: 0 < k : Reasonable range [16, 2048+] *\/$/;"	m	struct:__anon27
+k	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned k;                  \/* Segment size : constraint: 0 < k : Reasonable range [16, 2048+] *\/$/;"	m	struct:__anon28
+litLength	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned int litLength;   \/* Literal length of the sequence. *\/$/;"	m	struct:__anon36
+litLength	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned int litLength;   \/* Literal length of the sequence. *\/$/;"	m	struct:__anon7
+lowerBound	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    int lowerBound;$/;"	m	struct:__anon32
+lowerBound	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    int lowerBound;$/;"	m	struct:__anon3
+main	target/debug/build/zstd-sys-72aa8c4d6a746190/out/flag_check.c	/^int main(void) { return 0; }/;"	f
+main	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/flag_check.c	/^int main(void) { return 0; }/;"	f
+matchLength	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned int matchLength; \/* Match length of the sequence. *\/$/;"	m	struct:__anon36
+matchLength	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned int matchLength; \/* Match length of the sequence. *\/$/;"	m	struct:__anon7
+minMatch	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned minMatch;        \/**< match length searched : larger == faster decompression, sometimes less compression *\/$/;"	m	struct:__anon37
+minMatch	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned minMatch;        \/**< match length searched : larger == faster decompression, sometimes less compression *\/$/;"	m	struct:__anon8
+nbActiveWorkers	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned nbActiveWorkers;      \/* MT only : nb of workers actively compressing at probe time *\/$/;"	m	struct:__anon52
+nbActiveWorkers	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned nbActiveWorkers;      \/* MT only : nb of workers actively compressing at probe time *\/$/;"	m	struct:__anon23
+nbThreads	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned nbThreads;          \/* Number of threads : constraint: 0 < nbThreads : 1 means single-threaded : Only used for optimization : Ignored if ZSTD_MULTITHREAD is not defined *\/$/;"	m	struct:__anon56
+nbThreads	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned nbThreads;          \/* Number of threads : constraint: 0 < nbThreads : 1 means single-threaded : Only used for optimization : Ignored if ZSTD_MULTITHREAD is not defined *\/$/;"	m	struct:__anon57
+nbThreads	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned nbThreads;          \/* Number of threads : constraint: 0 < nbThreads : 1 means single-threaded : Only used for optimization : Ignored if ZSTD_MULTITHREAD is not defined *\/$/;"	m	struct:__anon27
+nbThreads	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned nbThreads;          \/* Number of threads : constraint: 0 < nbThreads : 1 means single-threaded : Only used for optimization : Ignored if ZSTD_MULTITHREAD is not defined *\/$/;"	m	struct:__anon28
+noDictIDFlag	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    int noDictIDFlag;    \/**< 1: no dictID will be saved into frame header (dictID is only useful for dictionary compression) *\/$/;"	m	struct:__anon38
+noDictIDFlag	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    int noDictIDFlag;    \/**< 1: no dictID will be saved into frame header (dictID is only useful for dictionary compression) *\/$/;"	m	struct:__anon9
+notificationLevel	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned notificationLevel;  \/**< Write log to stderr; 0 = none (default); 1 = errors; 2 = progression; 3 = details; 4 = debug; *\/$/;"	m	struct:__anon55
+notificationLevel	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned notificationLevel;  \/**< Write log to stderr; 0 = none (default); 1 = errors; 2 = progression; 3 = details; 4 = debug; *\/$/;"	m	struct:__anon26
+offset	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned int offset;      \/* The offset of the match. (NOT the same as the offset code)$/;"	m	struct:__anon36
+offset	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned int offset;      \/* The offset of the match. (NOT the same as the offset code)$/;"	m	struct:__anon7
+opaque	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon51
+opaque	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^typedef struct { ZSTD_allocFunction customAlloc; ZSTD_freeFunction customFree; void* opaque; } ZSTD_customMem;$/;"	m	struct:__anon22
+pos	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  size_t pos;         \/**< position where reading stopped. Will be updated. Necessarily 0 <= pos <= size *\/$/;"	m	struct:ZSTD_inBuffer_s
+pos	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  size_t pos;         \/**< position where writing stopped. Will be updated. Necessarily 0 <= pos <= size *\/$/;"	m	struct:ZSTD_outBuffer_s
+pos	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  size_t pos;         \/**< position where reading stopped. Will be updated. Necessarily 0 <= pos <= size *\/$/;"	m	struct:ZSTD_inBuffer_s
+pos	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  size_t pos;         \/**< position where writing stopped. Will be updated. Necessarily 0 <= pos <= size *\/$/;"	m	struct:ZSTD_outBuffer_s
+produced	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long produced;   \/* nb of compressed bytes generated and buffered *\/$/;"	m	struct:__anon52
+produced	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long produced;   \/* nb of compressed bytes generated and buffered *\/$/;"	m	struct:__anon23
+rep	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned int rep;         \/* Represents which repeat offset is represented by the field 'offset'.$/;"	m	struct:__anon36
+rep	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned int rep;         \/* Represents which repeat offset is represented by the field 'offset'.$/;"	m	struct:__anon7
+searchLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned searchLog;       \/**< nb of searches : larger == more compression, slower *\/$/;"	m	struct:__anon37
+searchLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned searchLog;       \/**< nb of searches : larger == more compression, slower *\/$/;"	m	struct:__anon8
+selectivityLevel	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned selectivityLevel;   \/* 0 means default; larger => select more => larger dictionary *\/$/;"	m	struct:__anon58
+selectivityLevel	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned selectivityLevel;   \/* 0 means default; larger => select more => larger dictionary *\/$/;"	m	struct:__anon29
+shrinkDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned shrinkDict;         \/* Train dictionaries to shrink in size starting from the minimum size and selects the smallest dictionary that is shrinkDictMaxRegression% worse than the largest dictionary. 0 means no shrinking and 1 means shrinking  *\/$/;"	m	struct:__anon56
+shrinkDict	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned shrinkDict;         \/* Train dictionaries to shrink in size starting from the minimum size and selects the smallest dictionary that is shrinkDictMaxRegression% worse than the largest dictionary. 0 means no shrinking and 1 means shrinking  *\/$/;"	m	struct:__anon57
+shrinkDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned shrinkDict;         \/* Train dictionaries to shrink in size starting from the minimum size and selects the smallest dictionary that is shrinkDictMaxRegression% worse than the largest dictionary. 0 means no shrinking and 1 means shrinking  *\/$/;"	m	struct:__anon27
+shrinkDict	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned shrinkDict;         \/* Train dictionaries to shrink in size starting from the minimum size and selects the smallest dictionary that is shrinkDictMaxRegression% worse than the largest dictionary. 0 means no shrinking and 1 means shrinking  *\/$/;"	m	struct:__anon28
+shrinkDictMaxRegression	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned shrinkDictMaxRegression; \/* Sets shrinkDictMaxRegression so that a smaller dictionary can be at worse shrinkDictMaxRegression% worse than the max dict size dictionary. *\/$/;"	m	struct:__anon56
+shrinkDictMaxRegression	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned shrinkDictMaxRegression; \/* Sets shrinkDictMaxRegression so that a smaller dictionary can be at worse shrinkDictMaxRegression% worse than the max dict size dictionary. *\/$/;"	m	struct:__anon57
+shrinkDictMaxRegression	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned shrinkDictMaxRegression; \/* Sets shrinkDictMaxRegression so that a smaller dictionary can be at worse shrinkDictMaxRegression% worse than the max dict size dictionary. *\/$/;"	m	struct:__anon27
+shrinkDictMaxRegression	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned shrinkDictMaxRegression; \/* Sets shrinkDictMaxRegression so that a smaller dictionary can be at worse shrinkDictMaxRegression% worse than the max dict size dictionary. *\/$/;"	m	struct:__anon28
+size	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  size_t size;        \/**< size of input buffer *\/$/;"	m	struct:ZSTD_inBuffer_s
+size	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  size_t size;        \/**< size of output buffer *\/$/;"	m	struct:ZSTD_outBuffer_s
+size	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  size_t size;        \/**< size of input buffer *\/$/;"	m	struct:ZSTD_inBuffer_s
+size	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  size_t size;        \/**< size of output buffer *\/$/;"	m	struct:ZSTD_outBuffer_s
+splitPoint	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    double splitPoint;           \/* Percentage of samples used for training: Only used for optimization : the first nbSamples * splitPoint samples will be used to training, the last nbSamples * (1 - splitPoint) samples will be used for testing, 0 means default (0.75), 1.0 when all samples are used for both training and testing *\/$/;"	m	struct:__anon57
+splitPoint	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    double splitPoint;           \/* Percentage of samples used for training: Only used for optimization : the first nbSamples * splitPoint samples will be used to training, the last nbSamples * (1 - splitPoint) samples will be used for testing, 0 means default (1.0), 1.0 when all samples are used for both training and testing *\/$/;"	m	struct:__anon56
+splitPoint	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    double splitPoint;           \/* Percentage of samples used for training: Only used for optimization : the first nbSamples * splitPoint samples will be used to training, the last nbSamples * (1 - splitPoint) samples will be used for testing, 0 means default (0.75), 1.0 when all samples are used for both training and testing *\/$/;"	m	struct:__anon28
+splitPoint	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    double splitPoint;           \/* Percentage of samples used for training: Only used for optimization : the first nbSamples * splitPoint samples will be used to training, the last nbSamples * (1 - splitPoint) samples will be used for testing, 0 means default (1.0), 1.0 when all samples are used for both training and testing *\/$/;"	m	struct:__anon27
+src	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^  const void* src;    \/**< start of input buffer *\/$/;"	m	struct:ZSTD_inBuffer_s
+src	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^  const void* src;    \/**< start of input buffer *\/$/;"	m	struct:ZSTD_inBuffer_s
+steps	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means default (40) : Higher means more parameters checked *\/$/;"	m	struct:__anon56
+steps	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means default (40) : Higher means more parameters checked *\/$/;"	m	struct:__anon57
+steps	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means default (40) : Higher means more parameters checked *\/$/;"	m	struct:__anon27
+steps	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means default (40) : Higher means more parameters checked *\/$/;"	m	struct:__anon28
+strategy	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    ZSTD_strategy strategy;   \/**< see ZSTD_strategy definition above *\/$/;"	m	struct:__anon37
+strategy	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    ZSTD_strategy strategy;   \/**< see ZSTD_strategy definition above *\/$/;"	m	struct:__anon8
+targetLength	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned targetLength;    \/**< acceptable match size for optimal parser (only) : larger == more compression, slower *\/$/;"	m	struct:__anon37
+targetLength	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned targetLength;    \/**< acceptable match size for optimal parser (only) : larger == more compression, slower *\/$/;"	m	struct:__anon8
+upperBound	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    int upperBound;$/;"	m	struct:__anon32
+upperBound	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    int upperBound;$/;"	m	struct:__anon3
+windowLog	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned windowLog;       \/**< largest match distance : larger == more compression, more memory needed during decompression *\/$/;"	m	struct:__anon37
+windowLog	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned windowLog;       \/**< largest match distance : larger == more compression, more memory needed during decompression *\/$/;"	m	struct:__anon8
+windowSize	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zstd.h	/^    unsigned long long windowSize;       \/* can be very large, up to <= frameContentSize *\/$/;"	m	struct:__anon49
+windowSize	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zstd.h	/^    unsigned long long windowSize;       \/* can be very large, up to <= frameContentSize *\/$/;"	m	struct:__anon20
+zParams	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon56
+zParams	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon57
+zParams	target/debug/build/zstd-sys-72aa8c4d6a746190/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon58
+zParams	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon27
+zParams	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon28
+zParams	target/debug/build/zstd-sys-e7a4a5dd443ca7d9/out/include/zdict.h	/^    ZDICT_params_t zParams;$/;"	m	struct:__anon29

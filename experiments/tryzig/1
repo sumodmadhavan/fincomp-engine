@@ -1,0 +1,104 @@
+const std = @import("std");
+const math = @import("std").math;
+
+const FinancialParams = struct {
+    num_years: i32,
+    au_hours: f64,
+    initial_tsn: f64,
+    rate_escalation: f64,
+    aic: f64,
+    hsi_tsn: f64,
+    overhaul_tsn: f64,
+    hsi_cost: f64,
+    overhaul_cost: f64,
+};
+
+fn calculate_financials(rate: f64, params: *const FinancialParams) f64 {
+    var cumulative_profit: f64 = 0.0;
+
+    var year: i32 = 1;
+    while (year <= params.num_years) : (year += 1) {
+        const tsn = params.initial_tsn + params.au_hours * f64(year);
+        const escalated_rate = rate * math.pow(1.0 + params.rate_escalation / 100.0, f64(year - 1));
+        const engine_revenue = params.au_hours * escalated_rate;
+        const total_revenue = engine_revenue * (1.0 + params.aic / 100.0);
+
+        const hsi_cost = if (tsn >= params.hsi_tsn and (year == 1 or tsn - params.au_hours < params.hsi_tsn))
+                         params.hsi_cost else 0.0;
+        const overhaul_cost = if (tsn >= params.overhaul_tsn and (year == 1 or tsn - params.au_hours < params.overhaul_tsn))
+                              params.overhaul_cost else 0.0;
+
+        cumulative_profit += total_revenue - (hsi_cost + overhaul_cost);
+    }
+
+    return cumulative_profit;
+}
+
+fn objective_function(rate: f64, params: *const FinancialParams) f64 {
+    return calculate_financials(rate, params) - 3000000.0; // Target profit
+}
+
+fn derivative_function(rate: f64, params: *const FinancialParams) f64 {
+    const epsilon: f64 = 1e-6;
+    return (objective_function(rate + epsilon, params) - objective_function(rate, params)) / epsilon;
+}
+
+fn newton_raphson(
+    f: *const fn(f64, *const FinancialParams) f64,
+    df: *const fn(f64, *const FinancialParams) f64,
+    x0: f64, tol: f64,
+    max_iter: i32,
+    params: *const FinancialParams
+) f64 {
+    var x = x0;
+
+    var i: i32 = 0;
+    while (i < max_iter) : (i += 1) {
+        const fx = f.*(x, params);
+        if (math.abs(fx) < tol) return x;
+
+        const dfx = df.*(x, params);
+        if (dfx == 0.0) {
+            std.debug.print("Derivative is zero. Newton-Raphson method failed.\n", .{});
+            return x;
+        }
+
+        x -= fx / dfx;
+    }
+
+    std.debug.print("Newton-Raphson method did not converge within {d} iterations\n", .{max_iter});
+    return x;
+}
+
+pub fn main() void {
+    var params = FinancialParams{
+        .num_years = 10,
+        .au_hours = 450.0,
+        .initial_tsn = 100.0,
+        .rate_escalation = 5.0,
+        .aic = 10.0,
+        .hsi_tsn = 1000.0,
+        .overhaul_tsn = 3000.0,
+        .hsi_cost = 50000.0,
+        .overhaul_cost = 100000.0,
+    };
+
+    const initial_rate: f64 = 100.0;
+    const target_profit: f64 = 3000000.0;
+
+    const start = std.time.milliTimestamp();
+
+    const initial_cumulative_profit = calculate_financials(initial_rate, &params);
+    std.debug.print("Initial Warranty Rate: {any}\n", .{initial_rate});
+    std.debug.print("Initial Cumulative Profit: {any}\n", .{initial_cumulative_profit});
+
+    const optimal_rate = newton_raphson(&objective_function, &derivative_function, initial_rate, 1e-8, 100, &params);
+    std.debug.print("Optimal Warranty Rate to achieve {any} profit: {any}\n", .{target_profit, optimal_rate});
+
+    const final_cumulative_profit = calculate_financials(optimal_rate, &params);
+    std.debug.print("Final Cumulative Profit: {any}\n", .{final_cumulative_profit});
+
+    const end = std.time.milliTimestamp();
+    const cpu_time_used = (end - start) / 1000.0; // Convert milliseconds to seconds
+    std.debug.print("Execution time: {any} seconds\n", .{cpu_time_used});
+}
